@@ -12,11 +12,19 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <ul class="main-nav__links menu-list">
-        <li class="menu-list__item"><a href="#">Главная</a></li>
-        <li class="menu-list__item"><a href="#">Фотографии</a></li>
-        <li class="menu-list__item"><a href="#">Конкурс</a></li>
-        <li class="menu-list__item"><a href="#">HTML ACADEMY</a></li>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">HTML ACADEMY</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -24,22 +32,21 @@
   <main class="container">
     <section class="download">
       <h1 class="visually-hidden">Приложение Пинк</h1>
-      <img class="download__image" src="#" alt="Скриншот приложения">
       <a class="download__link" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
       <ul class="download__list">
         <li class="download__item">
-         <a class="download__link">
-          <img class="download__image" src="https://www.apple.com/ru/itunes/"  alt="iTunes">
-         </a>
-        </li>
-        <li class="download__item">
-          <a class="download__link">
-            <img class="download__image" src="https://play.google.com"  alt="Android">
+          <a class="download__link" href="https://www.apple.com/ru/itunes/">
+            <img class="download__image" src="#" alt="iTunes">
           </a>
         </li>
         <li class="download__item">
-          <a class="download__link">
-            <img class="download__image" src="https://www.microsoft.com/ru-ru/store/apps/windows-phone"  alt="Windows phone">
+          <a class="download__link" href="https://play.google.com">
+            <img class="download__image" src="#" alt="Android">
+          </a>
+        </li>
+        <li class="download__item">
+          <a class="download__link" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
+            <img class="download__image" src="#" alt="Windows phone">
           </a>
         </li>
       </ul>
@@ -47,21 +54,24 @@
     </section>
 
     <section class="advantages">
-      <h2 class="visually-hidden">Преимущества приложения</h2>
+      <h2 class="advantages__title advantges__subtitle">Преимущества приложения</h2>
       <p>Устали от серости мегаполиса?</p>
       <p> Нам есть, что вам  предложить!</p>
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--mood">
           <h3 class="advantages__title">Поднимает настроение</h3>
           <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          <img class="advantages__image" src="#" alt="Настроение">
         </li>
         <li class="advantages__item advantages__item--world">
           <h3 class="advantages__title">Меняет мир вокруг</h3>
           <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <img class="advantages__image" src="#" alt="Мир">
         </li>
         <li class="advantages__item advantages__item--friend">
           <h3 class="advantages__title">Заводит новых друзей</h3>
           <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <img class="advantages__image" src="#" alt="Друзья">
         </li>
       </ul>
       <img class="advantages__image" src="#" alt="Скриншот приложения">
@@ -70,7 +80,7 @@
     <section class="reviews">
       <div class="reviews__wrapper slider">
         <h2 class="visually-hidden">Отзывы о нас</h2>
-        <div class="reviews__list  slider__list">
+        <div class="reviews__list">
           <blockquote class="reviews__item  slider__item">
             <p class="reviews__author-name">Николай Петров</p>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -88,9 +98,9 @@
         <input class="visually-hidden" type="radio" id="slider__toggle-2" name="toggle">
         <input class="visually-hidden" type="radio" id="slider__toggle-3" name="toggle">
         <div class="reviews__toggles slider__toggles">
-          <label class="slider__toggle slider__toggle__item-1" for="slider__toggle-1">Первый</label>
-          <label class="slider__toggle slider__toggle__item-2" for="slider__toggle-2">Второй</label>
-          <label class="slider__toggle slider__toggle__item-3" for="slider__toggle-3">Третий</label>
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
         </div>
       </div>
     </section>
@@ -101,8 +111,20 @@
         <table class="prices__table">
           <tr>
             <td>
-              <span>Стандарт</span>
-              <span>3,99 USD</span>
+              <h2 class="prices__title">База 1,99</h2>
+              <span class="prices__text">3,99 USD</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="prices__title">Стандарт</h2>
+              <span class="prices__text">3,99 USD</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="prices__title">Анлим</h2>
+              <span class="prices__text">9,99 USD</span>
             </td>
           </tr>
           <tr>
@@ -114,14 +136,16 @@
           <tr>
             <td>Комментарии</td>
           </tr>
+
+
         </table>
         <input class="visually-hidden" type="radio" id="prices__toggle-1" name="toggle" checked>
         <input class="visually-hidden" type="radio" id="prices__toggle-2" name="toggle">
         <input class="visually-hidden" type="radio" id="prices__toggle-3" name="toggle">
         <div class="prices__toggles">
-          <label class="prices__toggle slider__toggle__item-1" for="prices__toggle-1">Первый</label>
-          <label class="prices__toggle slider__toggle__item-2" for="prices__toggle-2">Второй</label>
-          <label class="prices__toggle slider__toggle__item-3" for="prices__toggle-3">Третий</label>
+          <button class="prices__toggle" type="button">1</button>
+          <button class="prices__toggle" type="button">2</button>
+          <button class="prices__toggle" type="button">3</button>
         </div>
       </div>
     </section>
@@ -131,12 +155,18 @@
       <p class="contacts__text">Остались вопросы?
       Свяжитесь с нами!
       </p>
-      <p class="contacts__title">Звоните:</p>
-      <span class="contacts__text">+7 (812) 555-66-66</span>
-      <p class="contacts__title">Пишите::</p>
-      <span class="contacts__text">mail@htmlacademy.ru</span>
-      <p class="contacts__title">Приезжайте в гости:</p>
-      <span class="contacts__text">ул. Большая Конюшенная, 19/8</span>
+      <div class="contacts__section">
+        <p class="contacts__title">Звоните:</p>
+        <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+      </div>
+      <div class="contacts__section">
+        <p class="contacts__title">Пишите::</p>
+        <a class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </div>
+      <div class="contacts__section">
+        <p class="contacts__title">Приезжайте в гости:</p>
+        <span class="contacts__text">ул. Большая Конюшенная, 19/8</span>
+      </div>
     </section>
 
     <section class="map">
@@ -147,6 +177,3 @@
   </main>
 </body>
 </html>
-
-
-
