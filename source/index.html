@@ -1,12 +1,179 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+  <header class="header">
+    <a class="header__logo">
+      <img class="header__logo_image" src="#"  alt="Лого">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="https://htmlacademy.ru/">HTML ACADEMY</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  </body>
+  <main class="container">
+    <section class="download">
+      <h1 class="visually-hidden">Приложение Пинк</h1>
+      <a class="download__link" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+      <ul class="download__list">
+        <li class="download__item">
+          <a class="download__link" href="https://www.apple.com/ru/itunes/">
+            <img class="download__image" src="#" alt="iTunes">
+          </a>
+        </li>
+        <li class="download__item">
+          <a class="download__link" href="https://play.google.com">
+            <img class="download__image" src="#" alt="Android">
+          </a>
+        </li>
+        <li class="download__item">
+          <a class="download__link" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
+            <img class="download__image" src="#" alt="Windows phone">
+          </a>
+        </li>
+      </ul>
+      <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+    </section>
+
+    <section class="advantages">
+      <h2 class="visually-hidden">Преимущества приложения</h2>
+      <p class="advantages__title advantges__subtitle">Устали от серости мегаполиса?</p>
+      <p> Нам есть, что вам  предложить!</p>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--mood">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+          <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          <img class="advantages__image" src="#" alt="Настроение">
+        </li>
+        <li class="advantages__item advantages__item--world">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+          <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <img class="advantages__image" src="#" alt="Мир">
+        </li>
+        <li class="advantages__item advantages__item--friend">
+          <h3 class="advantages__title">Заводит новых друзей</h3>
+          <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <img class="advantages__image" src="#" alt="Друзья">
+        </li>
+      </ul>
+      <img class="advantages__image" src="#" alt="Скриншот приложения">
+    </section>
+
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <h2 class="visually-hidden">Отзывы о нас</h2>
+        <div class="reviews__list">
+          <blockquote class="reviews__item  slider__item">
+            <p class="reviews__author-name">Николай Петров</p>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <blockquote class="reviews__item  slider__item">
+            <p class="reviews__author-name">Джон Смит</p>
+            <p class="reviews__text">Отличную стрижку мне сделали ребята.</p>
+          </blockquote>
+          <blockquote class="reviews__item  slider__item">
+            <p class="reviews__author-name">Иван Бородайло</p>
+            <p class="reviews__text">В Бородинском ваша борода в надёжных руках!</p>
+          </blockquote>
+        </div>
+        <input class="visually-hidden" type="radio" id="slider__toggle-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="slider__toggle-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="slider__toggle-3" name="toggle">
+        <div class="reviews__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="prices">
+      <h2 class="visually-hidden">Тарифы</h2>
+      <div class="prices__wrapper">
+        <table class="prices__table">
+          <tr>
+            <td>
+              <h2 class="prices__title">База</h2>
+              <span class="prices__text">1,99 USD</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="prices__title">Стандарт</h2>
+              <span class="prices__text">3,99 USD</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 class="prices__title">Анлим</h2>
+              <span class="prices__text">9,99 USD</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Розовый фильтр</td>
+          </tr>
+          <tr>
+            <td>Смайлики</td>
+          </tr>
+          <tr>
+            <td>Комментарии</td>
+          </tr>
+
+
+        </table>
+        <input class="visually-hidden" type="radio" id="prices__toggle-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="prices__toggle-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="prices__toggle-3" name="toggle">
+        <div class="prices__toggles">
+          <button class="prices__toggle" type="button">1</button>
+          <button class="prices__toggle" type="button">2</button>
+          <button class="prices__toggle" type="button">3</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <p class="contacts__text">Остались вопросы?
+      Свяжитесь с нами!
+      </p>
+      <div class="contacts__section">
+        <p class="contacts__title">Звоните:</p>
+        <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+      </div>
+      <div class="contacts__section">
+        <p class="contacts__title">Пишите::</p>
+        <a class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </div>
+      <div class="contacts__section">
+        <p class="contacts__title">Приезжайте в гости:</p>
+        <span class="contacts__text">ул. Большая Конюшенная, 19/8</span>
+      </div>
+    </section>
+
+    <section class="map">
+      <h2 class="visually-hidden">Карта</h2>
+      <iframe class="map__code" src="https://yandex.ru/map-widget/v1/?um=constructor%3A6facb77653f51b08ea881cf8912703d6e8c58c039fed4248bc390768757cde3a&amp;source=constructor" height="400"></iframe>
+    </section>
+
+  </main>
+</body>
 </html>
