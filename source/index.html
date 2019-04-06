@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
   <header class="header">
     <a class="header__logo">
-      <img class="header__logo_image" src="#"  alt="Лого">
+      <img class="header__logo_image" src="img/logo-pink-white-mobile.svg"  alt="Лого">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -32,25 +33,31 @@
   <main class="container">
     <section class="download">
       <h1 class="visually-hidden">Приложение Пинк</h1>
-      <a class="download__link" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
-      <ul class="download__list">
-        <li class="download__item">
-          <a class="download__link" href="https://www.apple.com/ru/itunes/">
-            <img class="download__image" src="#" alt="iTunes">
-          </a>
-        </li>
-        <li class="download__item">
-          <a class="download__link" href="https://play.google.com">
-            <img class="download__image" src="#" alt="Android">
-          </a>
-        </li>
-        <li class="download__item">
-          <a class="download__link" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
-            <img class="download__image" src="#" alt="Windows phone">
-          </a>
-        </li>
-      </ul>
-      <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+      <div>
+        <img class="download__background" src="img/bg-back-mobile.jpg" alt="Фон">
+        <img class="download__hand" src="img/iphone-hand-mobile.png" alt="Рука">
+      </div>
+      <div class="download__wrapper">
+        <a class="download__link" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+        <ul class="download__list">
+          <li class="download__item">
+            <a class="download__link" href="https://www.apple.com/ru/itunes/">
+              <img class="download__image" src="#" alt="iTunes">
+            </a>
+          </li>
+          <li class="download__item">
+            <a class="download__link" href="https://play.google.com">
+              <img class="download__image" src="#" alt="Android">
+            </a>
+          </li>
+          <li class="download__item">
+            <a class="download__link" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
+              <img class="download__image" src="#" alt="Windows phone">
+            </a>
+          </li>
+        </ul>
+        <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+      </div>
     </section>
 
     <section class="advantages">
@@ -74,7 +81,7 @@
           <img class="advantages__image" src="#" alt="Друзья">
         </li>
       </ul>
-      <img class="advantages__image" src="#" alt="Скриншот приложения">
+      <img class="advantages__image" src="img/iphone-screen-mobile.png" alt="Скриншот приложения">
     </section>
 
     <section class="reviews">
@@ -136,8 +143,6 @@
           <tr>
             <td>Комментарии</td>
           </tr>
-
-
         </table>
         <input class="visually-hidden" type="radio" id="prices__toggle-1" name="toggle" checked>
         <input class="visually-hidden" type="radio" id="prices__toggle-2" name="toggle">
