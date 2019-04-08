@@ -26,7 +26,20 @@
   font-style: normal;
 }
 
-.body {
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+$font: "Open Sans", "Arial", sans-serif;
+
+body {
+  font-family: $font;
   font-weight: 400px;
   font-size: 14px;
   color: #283645;
@@ -35,7 +48,6 @@
   min-width: 320px;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .visually-hidden:not(:focus):not(:active),
