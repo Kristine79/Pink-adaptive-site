@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
   <header class="header">
     <a class="header__logo">
-      <img class="header__logo_image" src="#"  alt="Лого">
+      <img class="header__logo-image" src="img/logo-pink-white-mobile.svg"  alt="Лого">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -20,7 +21,7 @@
           <a class="main-nav__link" href="photo.html">Фотографии</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Конкурс</a>
+          <a class="main-nav__link" href="form.html">Конкурс</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="https://htmlacademy.ru/">HTML ACADEMY</a>
@@ -32,25 +33,31 @@
   <main class="container">
     <section class="download">
       <h1 class="visually-hidden">Приложение Пинк</h1>
-      <a class="download__link" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
-      <ul class="download__list">
-        <li class="download__item">
-          <a class="download__link" href="https://www.apple.com/ru/itunes/">
-            <img class="download__image" src="#" alt="iTunes">
-          </a>
-        </li>
-        <li class="download__item">
-          <a class="download__link" href="https://play.google.com">
-            <img class="download__image" src="#" alt="Android">
-          </a>
-        </li>
-        <li class="download__item">
-          <a class="download__link" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
-            <img class="download__image" src="#" alt="Windows phone">
-          </a>
-        </li>
-      </ul>
-      <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+      <div>
+        <img class="download__background" src="img/bg-back-mobile.jpg" alt="Фон">
+        <img class="download__hand" src="img/iphone-hand-mobile.png" alt="Рука">
+      </div>
+      <div class="download__wrapper">
+        <a class="download__link" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+        <ul class="download__list">
+          <li class="download__item">
+            <a class="download__link" href="https://www.apple.com/ru/itunes/">
+              <img class="download__image" src="#" alt="iTunes">
+            </a>
+          </li>
+          <li class="download__item">
+            <a class="download__link" href="https://play.google.com">
+              <img class="download__image" src="#" alt="Android">
+            </a>
+          </li>
+          <li class="download__item">
+            <a class="download__link" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
+              <img class="download__image" src="#" alt="Windows phone">
+            </a>
+          </li>
+        </ul>
+        <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+      </div>
     </section>
 
     <section class="advantages">
@@ -74,7 +81,7 @@
           <img class="advantages__image" src="#" alt="Друзья">
         </li>
       </ul>
-      <img class="advantages__image" src="#" alt="Скриншот приложения">
+      <img class="advantages__image" src="img/iphone-screen-mobile.png" alt="Скриншот приложения">
     </section>
 
     <section class="reviews">
@@ -108,36 +115,34 @@
     <section class="prices">
       <h2 class="visually-hidden">Тарифы</h2>
       <div class="prices__wrapper">
-        <table class="prices__table">
-          <tr>
+        <table>
+          <tr class="prices__header">
             <td>
               <h2 class="prices__title">База</h2>
               <span class="prices__text">1,99 USD</span>
             </td>
           </tr>
-          <tr>
+          <tr class="prices__header">
             <td>
               <h2 class="prices__title">Стандарт</h2>
               <span class="prices__text">3,99 USD</span>
             </td>
           </tr>
-          <tr>
+          <tr class="prices__header">
             <td>
               <h2 class="prices__title">Анлим</h2>
               <span class="prices__text">9,99 USD</span>
             </td>
           </tr>
-          <tr>
+          <tr class="prices__content">
             <td>Розовый фильтр</td>
           </tr>
-          <tr>
+          <tr class="prices__content">
             <td>Смайлики</td>
           </tr>
-          <tr>
+          <tr class="prices__content">
             <td>Комментарии</td>
           </tr>
-
-
         </table>
         <input class="visually-hidden" type="radio" id="prices__toggle-1" name="toggle" checked>
         <input class="visually-hidden" type="radio" id="prices__toggle-2" name="toggle">
@@ -161,11 +166,11 @@
       </div>
       <div class="contacts__section">
         <p class="contacts__title">Пишите::</p>
-        <a class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </div>
       <div class="contacts__section">
         <p class="contacts__title">Приезжайте в гости:</p>
-        <span class="contacts__text">ул. Большая Конюшенная, 19/8</span>
+        <span class="contacts__link">ул. Большая Конюшенная, 19/8</span>
       </div>
     </section>
 
