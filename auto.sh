@@ -4,7 +4,7 @@ codetest="npm run test"
 addfiles="git add ."
 commit="git commit -m"
 push="git push origin"
-currentbranch="git rev-parse --abbrev-ref HEAD"
+currentbranch="git rev-parse --abbrev-ref HEAD | grep modul"
 
 if ($codetest | grep "npm ERR!") then
   echo "Есть ошибки в коде!"

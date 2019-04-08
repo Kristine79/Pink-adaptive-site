@@ -5,10 +5,39 @@
 */
 
 /*Шрифты*/
-$opensans: "Open Sans", "Arial", sans-serif;
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
-/*Отступы*/
-$mobile-pads: 20px;
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensanslight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+.body {
+  font-family: "Open Sans";
+  font-weight: 400px;
+  font-size: 14px;
+  color: #283645;
+  font-style: normal;
+  line-height: 24px;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -34,14 +63,5 @@ img {
   height: auto;
 }
 
-.body {
-  font-family: $opensans;
-  font-weight: 400px;
-  font-size: 14px;
-  color: #283645;
-  font-style: normal;
-  line-height: 24px;
-  min-width: 320px;
-  margin: 0;
-  padding: 0;
-}
+/*Отступы*/
+$mobile-pads: 20px;
