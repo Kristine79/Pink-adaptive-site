@@ -8,3 +8,28 @@
   color: #ffffff;
   text-transform: uppercase;
 }
+
+
+/*Сетка mobile*/
+@media (min-width: 320px) {
+  .main-nav__list {
+    display: block;
+  }
+}
+
+/*Сетка tablet*/
+@media (min-width: 660px) {
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/*Сетка desktop*/
+
+@media (min-width: 1200px) {
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

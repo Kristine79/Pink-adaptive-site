@@ -12,3 +12,30 @@
   font-weight: 300px;
   color: #ffffff;
 }
+
+/*Сетка mobile*/
+@media (min-width: 320px) {
+  .download__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .download__background {
+    background-image: url("img/bg-back-mobile.png") no-repeat center;
+  }
+}
+
+/*Сетка tablet*/
+@media (min-width: 660px) {
+  .download__background {
+    background-image: url("img/bg-back-tablet.png");
+  }
+}
+
+/*Сетка desktop*/
+
+@media (min-width: 1200px) {
+  .download__background {
+    background-image: url("img/bg-back-desktop.png");
+  }
+}

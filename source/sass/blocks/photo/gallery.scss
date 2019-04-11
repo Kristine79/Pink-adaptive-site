@@ -14,3 +14,31 @@
   font-size: 12px;
   color: #d22856;
 }
+
+.gallery__item {
+  width: 300px;
+}
+
+/*Сетка mobile*/
+@media (min-width: 320px) {
+  .gallery__list {
+    display: block;
+  }
+}
+
+/*Сетка tablet*/
+@media (min-width: 660px) {
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/*Сетка desktop*/
+
+@media (min-width: 1200px) {
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

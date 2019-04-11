@@ -33,9 +33,9 @@
   <main class="container">
     <section class="download">
       <h1 class="visually-hidden">Приложение Пинк</h1>
-      <div>
-        <img class="download__background" src="img/bg-back-mobile.jpg" alt="Фон">
-        <img class="download__hand" src="img/iphone-hand-mobile.png" alt="Рука">
+      <div class="download__background">
+        <!--<img class="download__background" src="img/bg-back-mobile.jpg" alt="Фон">-->
+        <!--<img class="download__hand" src="img/iphone-hand-mobile.png" alt="Рука">-->
       </div>
       <div class="download__wrapper">
         <a class="download__link" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
@@ -68,20 +68,26 @@
         <li class="advantages__item advantages__item--mood">
           <h3 class="advantages__title">Поднимает настроение</h3>
           <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          <img class="advantages__image" src="#" alt="Настроение">
+          <img class="advantages__image advantages__image--hidden" src="img/iphone-screen-1-desktop.png" alt="Настроение">
         </li>
         <li class="advantages__item advantages__item--world">
           <h3 class="advantages__title">Меняет мир вокруг</h3>
           <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          <img class="advantages__image" src="#" alt="Мир">
+          <img class="advantages__image advantages__image--hidden" src="img/iphone-screen-2-desktop.png" alt="Мир">
         </li>
         <li class="advantages__item advantages__item--friend">
           <h3 class="advantages__title">Заводит новых друзей</h3>
           <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          <img class="advantages__image" src="#" alt="Друзья">
+          <img class="advantages__image" src="img/iphone-screen-3-desktop.png" alt="Друзья">
         </li>
       </ul>
-      <img class="advantages__image" src="img/iphone-screen-mobile.png" alt="Скриншот приложения">
+    </section>
+
+    <section class="effect">
+      <img class="effect__image" src="#" alt="Часы">
+      <h2 class="effect__header">Эффект на 24 часа</h2>
+      <p class="effect__text">Эффект на 24 часа!Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+      <a class="effect__link" href="#">Узнать больше о приложении</a>
     </section>
 
     <section class="reviews">
@@ -178,6 +184,37 @@
       <h2 class="visually-hidden">Карта</h2>
       <iframe class="map__code" src="https://yandex.ru/map-widget/v1/?um=constructor%3A6facb77653f51b08ea881cf8912703d6e8c58c039fed4248bc390768757cde3a&amp;source=constructor" height="400"></iframe>
     </section>
+
+    <footer class="page-footer page-footer__hidden">
+      <a class="footer-logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="footer-logo_image" src="#" alt="logo">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__button" href="#">
+              <img class="social__link social__link--twitter" src="#" alt="Twitter">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__button" href="#">
+              <img class="social__link social__link--facebook" src="#" alt="Facebook">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__button" href="#">
+              <img class="social__link social__link--youtube" src="#" alt="Youtube">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__image" src="https://htmlacademy.ru/intensive/adaptive" alt="logo">
+        </a>
+      </div>
+    </footer>
 
   </main>
 </body>

@@ -7,3 +7,35 @@
   font-weight: 300px;
   color: #000000;
 }
+
+/*Сетка mobile*/
+@media (min-width: 320px) {
+  .advantages__list {
+    display: block;
+  }
+
+  .advantages__image--hidden {
+    display: none;
+  }
+}
+
+/*Сетка tablet*/
+@media (min-width: 660px) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/*Сетка desktop*/
+
+@media (min-width: 1200px) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__description {
+    width: 236px;
+  }
+}
