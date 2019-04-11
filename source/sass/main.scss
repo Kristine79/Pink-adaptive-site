@@ -77,6 +77,21 @@ img {
 /*Отступы*/
 $mobile-pads: 20px;
 
-.advantages__list {
-  list-style: none;
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  min-width: 320px;
+}
+
+@media (min-width: 660px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    padding: 0 40px;
+    max-width: 1200px;
+  }
 }

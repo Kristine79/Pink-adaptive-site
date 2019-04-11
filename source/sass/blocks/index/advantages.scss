@@ -19,6 +19,12 @@
   }
 }
 
+
+.advantages__list {
+  list-style: none;
+}
+
+
 /*Сетка tablet*/
 @media (min-width: 660px) {
   .advantages__list {
@@ -37,5 +43,9 @@
 
   .advantages__description {
     width: 236px;
+  }
+
+  .advantages__image {
+    display: block;
   }
 }
