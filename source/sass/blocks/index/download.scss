@@ -14,7 +14,7 @@
 }
 
 /*Сетка mobile*/
-@media (min-width: 320px) {
+@media (min-width: $mobile) {
   .download__list {
     display: flex;
     flex-wrap: wrap;
@@ -26,7 +26,7 @@
 }
 
 /*Сетка tablet*/
-@media (min-width: 660px) {
+@media (min-width: $tablet) {
   .download__background {
     background-image: url("img/bg-back-tablet.png");
   }
@@ -34,7 +34,7 @@
 
 /*Сетка desktop*/
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .download__background {
     background-image: url("img/bg-back-desktop.png");
   }

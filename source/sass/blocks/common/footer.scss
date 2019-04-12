@@ -1,13 +1,13 @@
 /*Для телефона*/
 
-@media (min-width: 320px) {
+@media (min-width: $mobile) {
   .page-footer__hidden {
     display: none;
   }
 }
 
 /*Сетка для планшета*/
-@media (min-width: 660px) {
+@media (min-width: $tablet) {
   .page-footer {
     display: flex;
     flex-wrap: wrap;
@@ -21,7 +21,7 @@
 
 /*Сетка desktop*/
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .page-footer {
     display: flex;
     flex-wrap: wrap;

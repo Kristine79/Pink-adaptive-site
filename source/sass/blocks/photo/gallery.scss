@@ -20,14 +20,14 @@
 }
 
 /*Сетка mobile*/
-@media (min-width: 320px) {
+@media (min-width: $mobile) {
   .gallery__list {
     display: block;
   }
 }
 
 /*Сетка tablet*/
-@media (min-width: 660px) {
+@media (min-width: $tablet) {
   .gallery__list {
     display: flex;
     flex-wrap: wrap;
@@ -36,7 +36,7 @@
 
 /*Сетка desktop*/
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .gallery__list {
     display: flex;
     flex-wrap: wrap;
