@@ -7,3 +7,45 @@
   font-weight: 300px;
   color: #000000;
 }
+
+/*Сетка mobile*/
+@media (min-width: $mobile) {
+  .advantages__list {
+    display: block;
+  }
+
+  .advantages__image--hidden {
+    display: none;
+  }
+}
+
+
+.advantages__list {
+  list-style: none;
+}
+
+
+/*Сетка tablet*/
+@media (min-width: $tablet) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/*Сетка desktop*/
+
+@media (min-width: $desktop) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__description {
+    width: 236px;
+  }
+
+  .advantages__image--hidden {
+    display: block;
+  }
+}
