@@ -4,18 +4,49 @@
   line-height: 32px;
 }
 
-.main-nav__link {
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-
 /*Сетка mobile*/
 @media (min-width: $mobile) {
   .main-nav__list {
     display: block;
+    text-align: center;
+    margin: 0;
   }
-}
+
+
+  .main-nav__link {
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 65px;
+  }
+
+  .main-nav__item {
+    box-shadow: 0 -1px 0 #000, inset 0 1px 0 rgba(255,255,255,.15);
+  }
+
+  .main-nav__toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 23px;
+    border: none;
+    z-index: 9;
+    background: 0 0;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .main-nav__toggle--close {
+    background-image: url("../img/icon-menu-cross.svg");
+    background-position: 10px 0;
+    background-repeat: no-repeat;
+  }
+
+  .main-nav__logo {
+    fill: #fff;
+  }
+
 
 /*Сетка tablet*/
 @media (min-width: $tablet) {
@@ -25,11 +56,44 @@
   }
 }
 
+
 /*Сетка desktop*/
 
 @media (min-width: $desktop) {
+  .main-nav {
+    width: 600px;
+  }
+
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    min-width: 800px;
+    justify-content: space-around;
+    margin-left: 400px;
+    list-style: none;
   }
+
+  .main-nav__toggle--close {
+    display: none;
+  }
+
+  /*.main-nav {
+    position: absolute;
+    z-index: 2;
+    background: rgba(0,0,0,.3);
+  }*/
+
+  .main-nav__item {
+    background: 0 0;
+    box-shadow: none;
+  }
+
+  .main-nav__link {
+    line-height: 40px;
+    text-transform: none;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
 }

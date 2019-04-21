@@ -2,10 +2,29 @@
   background-color: #f2f2f2;
 }
 
-.advantages__title {
-  font-size: 24px;
-  font-weight: 300px;
-  color: #000000;
+.advantages__item {
+  margin: 0 auto 30px;
+}
+
+
+.advantages__container {
+  background-color: #f2f2f2;
+  background-image: url(../img/bg-triangle-white.svg);
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;
+}
+
+.advantages__title__main:first-child {
+  margin: 0 auto;
+}
+
+.advantages__title__main:last-child {
+  margin-bottom: 90px;
+}
+
+.advantages__title__wrapper {
+  text-align: center;
 }
 
 /*Сетка mobile*/
@@ -17,11 +36,25 @@
   .advantages__image--hidden {
     display: none;
   }
-}
 
+  .advantages__list {
+    list-style: none;
+  }
 
-.advantages__list {
-  list-style: none;
+  .advantages__title {
+    text-align: center;
+    color: #000000;
+  }
+
+  .advantages__title__main {
+    display:inline-block;
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #283645;
+    width: 250px;
+  }
 }
 
 
@@ -38,11 +71,54 @@
 @media (min-width: $desktop) {
   .advantages__list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .advantages__container {
+    background-color: #f2f2f2;
+    background-image: url(../img/bg-triangle-white.svg);
+    background-repeat: no-repeat;
+    background-size: 101% auto;
+    background-position: 50% 0;
   }
 
   .advantages__description {
     width: 236px;
+    text-align: center;
+  }
+
+  .advantages__item {
+    max-width: 300px;
+    margin-top: -100px;
+    margin-bottom: 0;
+    font-size: 18px;
+    background-size: 292px auto;
+  }
+
+  .advantages__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .advantages__title__main {
+    display: block;
+    width: 700px;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 300;
+    color: #283645;
+    margin: 20px auto;
+  }
+
+  .advantages__title__main:first-child {
+    margin: 0 auto;
+  }
+
+  .advantages__title__main:last-child {
+    padding-bottom: 90px;
   }
 
   .advantages__image--hidden {

@@ -1,5 +1,5 @@
-.download__wrapper {
-  background-color: #293646;
+.download {
+  padding: 0px;
 }
 
 .download__background {
@@ -8,21 +8,55 @@
 }
 
 .download__text {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300px;
   color: #ffffff;
 }
 
+.download__button {
+  display: block;
+  max-width: 280px;
+  margin: 0 auto 35px;
+  padding: 0 35px;
+  border: 3px solid #fff;
+  border-radius: 25px;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.download__background__text {
+    display: none;
+}
+
+.download__item {
+  display: block;
+    width: 80px;
+
+}
+
+
 /*Сетка mobile*/
 @media (min-width: $mobile) {
+
+  .download {
+    padding-top: 326px;
+  }
+
   .download__list {
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
   }
 
   .download__background {
-    background-image: url("img/bg-back-mobile.png") no-repeat center;
+    min-height: 460px;
+    padding: 0 20px;
+    background: url(../img/iphone-hand-mobile.png)50% 175px no-repeat,url(../img/bg-back-mobile.jpg)50% 0 no-repeat;
+    background-size: contain,cover;
   }
+
 }
 
 /*Сетка tablet*/
@@ -35,7 +69,49 @@
 /*Сетка desktop*/
 
 @media (min-width: $desktop) {
+
+  .download {
+    padding-top: 0px;
+  }
+
+  .download__background__text {
+    display:block;
+    color: #ffffff;
+    padding: 220px 0 0;
+    font-size: 50px;
+    line-height: 60px;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 10px;
+  }
+
+  .download__text {
+    font-weight: 300;
+  }
+
+  .download__list {
+    display: flex;
+    flex-wrap: wrap;
+    justifyc-content: space-between;
+
+  }
+
+  .download__button {
+    margin-bottom: 70px;
+    margin-top:30px;
+  }
+
+
+  .download__wrapper {
+    width: 300px;
+    margin: 0 10px;
+    bottom: 120px;
+  }
+
   .download__background {
-    background-image: url("img/bg-back-desktop.png");
+    min-height: 855px;
+    padding: 0 270px;
+    background: url("../img/iphone-hand-desktop.png")75% 100% no-repeat,url("../img/bg-back-desktop.jpg")50% 50% no-repeat;
+    font-size: 50px;
   }
 }

@@ -3,8 +3,6 @@
 Переменные
 Миксины
 */
-
-
 /*Шрифты*/
 @font-face {
   font-family: "Open Sans";
@@ -83,22 +81,21 @@ $mobile: 320px;
 $tablet: 660px;
 $desktop: 960px;
 
-
 .container {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 0px;
   min-width: 320px;
 }
 
 @media (min-width: $tablet) {
   .container {
-    padding: 0 30px;
+    padding: 0 0px;
   }
 }
 
 @media (min-width: $desktop) {
   .container {
-    padding: 0 40px;
-    max-width: 1200px;
+    padding: 0 0px;
+    /*max-width: 1200px;*/
   }
 }
