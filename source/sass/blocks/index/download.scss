@@ -36,11 +36,7 @@
 /*Сетка mobile*/
 @media (min-width: $mobile) {
 
-  .download {
-    padding-top: 326px;
-  }
-
-  .download__list {
+   .download__list {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
@@ -51,6 +47,7 @@
     padding: 0 20px;
     background: url(../img/iphone-hand-mobile.png)50% 175px no-repeat,url(../img/bg-back-mobile.jpg)50% 0 no-repeat;
     background-size: contain,cover;
+    margin-top: 326px;
   }
 
 }

@@ -9,7 +9,6 @@
     top: 0;
     box-sizing: border-box;
     width: 100%;
-    /*max-width: 1500px;*/
     min-width: 320px;
     background-color: #283645;
     z-index: 99;
@@ -26,7 +25,6 @@
 
   .header__logo {
     display: block;
-    position: absolute;
     top: 20px;
     left: 20px;
     max-width: 150px;
@@ -39,10 +37,14 @@
   .header {
     min-height: 110px;
     background: rgba(0,0,0,.3);
+
   }
 
   .header-wrap {
-    height: 0;
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
   }
 
 /*.header__wrap--opened {

@@ -10,6 +10,8 @@
     display: block;
     text-align: center;
     margin: 0;
+    background-color: #283645;
+    list-style: none;
   }
 
 
@@ -73,6 +75,7 @@
     margin-left: 400px;
     list-style: none;
     padding-top: 30px;
+    padding:0;
   }
 
   .main-nav__toggle--close {
@@ -88,6 +91,7 @@
   .main-nav__item {
     background: 0 0;
     box-shadow: none;
+    padding: 0;
   }
 
   .main-nav__link {
