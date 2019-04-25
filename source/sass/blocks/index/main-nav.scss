@@ -14,7 +14,6 @@
     list-style: none;
   }
 
-
   .main-nav__link {
     color: #ffffff;
     text-transform: uppercase;
@@ -53,26 +52,29 @@
 /*Сетка tablet*/
 @media (min-width: $tablet) {
   .main-nav__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    text-align: center;
+    margin: 0;
+    background-color: #283645;
+    list-style: none;
   }
+
+
 }
 
 
 /*Сетка desktop*/
 
 @media (min-width: $desktop) {
-  .main-nav {
-    width: 600px;
-  }
-
-  .main-nav__list {
+    .main-nav__list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     min-width: 800px;
     justify-content: space-around;
-    margin-left: 400px;
+    margin-left: auto;
+    background-color: transparent;
+
     list-style: none;
     padding-top: 30px;
     padding:0;

@@ -38,12 +38,24 @@
   .page-footer__hidden {
     display: none;
   }
+
+  .page-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social__list {
+    display:flex;
+  }
 }
 
 /*Сетка для планшета*/
 @media (min-width: $tablet) {
   .page-footer {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -59,6 +71,7 @@
 @media (min-width: $desktop) {
   .page-footer {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 940px;
   }

@@ -83,13 +83,13 @@ $desktop: 960px;
 
 .container {
   margin: 0 auto;
-  padding: 20px;
+  padding: 0px;
   min-width: 320px;
 }
 
 @media (min-width: $tablet) {
   .container {
-    padding: 0 30px;
+    padding: 0 0px;
   }
 }
 
