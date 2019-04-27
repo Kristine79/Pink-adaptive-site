@@ -19,16 +19,16 @@
 
 .gallery__item {
   width: 280px;
-
   margin-bottom: 54px;
 }
 
 .gallery__image {
-  display:block;
+  display: block;
 }
 
 .gallery__image--caption {
   background-color: #f2f2f2;
+  min-height: 155px;
 }
 
 /*Сетка mobile*/
@@ -36,8 +36,8 @@
   .gallery__list {
     display: block;
     list-style: none;
+    padding-left: 0;
   }
-
 }
 
 /*Сетка tablet*/
@@ -51,7 +51,6 @@
 /*Сетка desktop*/
 
 @media (min-width: $desktop) {
-
   .gallery__title__wrapper {
     text-align: center;
     padding-top: 90px;
@@ -67,16 +66,15 @@
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 940px;
   }
-
 
   .gallery__item__panorama {
     width: 100%;
   }
 
-.gallery__image--panorama {
-
-display:block;
-}
+  .gallery__image--panorama {
+    display: block;
+  }
 }

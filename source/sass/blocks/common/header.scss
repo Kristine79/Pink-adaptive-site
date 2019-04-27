@@ -20,7 +20,7 @@
   }
 
   .header__wrap--opened {
-    background: rgba(0,0,0,.3);
+    background: rgba(0, 0, 0, 0.3);
   }
 
   .header__logo {
@@ -29,44 +29,27 @@
     left: 20px;
     max-width: 150px;
     height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
   }
 }
 
-
-
-
-
 @media (min-width: $desktop) {
-
   .header {
-    min-height: 110px;
-    background-color: rgba(0,0,0,.5);
-  }
-
-  .header {
-    display:flex;
+    display: flex;
     justify-content: center;
     width: 100%;
     align-items: center;
-    margin:0 auto;
+    margin: 0 auto;
     /*max-width: 960px;*/
-    padding-top: 20px;
+    padding-bottom: 35px;
+    min-height: 110px;
+    background-color: rgba(0, 0, 0, 0.5);
   }
-
-
-
-/*.header__wrap--opened {
-    background-color: #283645;
-}*/
-
 
   .header__logo-mobile,
   .header__logo-tablet {
     display: none;
-  }
-
-  .header__logo {
-
   }
 
   .header__logo-desktop {
