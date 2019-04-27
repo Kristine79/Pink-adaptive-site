@@ -51,7 +51,7 @@
 /*Сетка desktop*/
 
 @media (min-width: $desktop) {
-  .gallery__title__wrapper {
+  .gallery__title--wrapper {
     text-align: center;
     padding-top: 90px;
     padding-bottom: 90px;
@@ -77,4 +77,11 @@
   .gallery__image--panorama {
     display: block;
   }
+
+  .gallery__item--first {
+    width: 100vw;
+    position: relative;
+    left: calc(-1 * (100vw - 100%) / 2);
+  }
+
 }
