@@ -1,41 +1,192 @@
-.download__wrapper {
-  background-color: #293646;
-}
-
 .download__background {
   font-size: 24px;
   font-weight: 300px;
 }
 
 .download__text {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300px;
   color: #ffffff;
 }
+
+.download__button {
+  display: block;
+  /*max-width: 280px;*/
+  margin: 0 auto 35px;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  padding-left: 30px;
+  border: 3px solid #ffffff;
+  border-radius: 25px;
+  font-size: 21px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/*.download__background__text {
+    display: none;
+}*/
+
+.download__item {
+  display: block;
+  width: 80px;
+}
+
 
 /*Сетка mobile*/
 @media (min-width: $mobile) {
   .download__list {
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
   }
 
-  .download__background {
-    background-image: url("img/bg-back-mobile.png") no-repeat center;
+  .download {
+    min-height: 460px;
+    background: url("../img/bg-back-mobile.jpg") 50% 0 no-repeat;
+    background-size: contain, cover;
+    margin-top: 261px;
+    position: relative;
+    background-color: #17212d;
+  }
+
+  .download__image--wrapper {
+    margin-top: 270px;
+  }
+
+  .download__wrapper {
+    margin-top: 26px;
+  }
+
+  .download__background__text {
+    display: none;
+  }
+
+  .download__text {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+  }
+
+  .download__button {
+    font-size: 18px;
+    line-height: 18px;
+    padding-left: 35px;
   }
 }
 
+
 /*Сетка tablet*/
 @media (min-width: $tablet) {
+  .download {
+    padding-top: 0;
+    margin-top: 0;
+    background: url("../img/bg-back-tablet.jpg") 100% 100% no-repeat;
+    position: relative;
+  }
+
+  .download__image--wrapper {
+    position: absolute;
+    margin-top: 572px;
+  }
+
+  .download__background__text {
+    display: block;
+    color: #ffffff;
+    padding: 399px 0 0;
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 300;
+    max-width: 200px;
+    text-align: center;
+    margin-left: 49px;
+  }
+
+  .download__text {
+    font-weight: 300;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .download__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .download__wrapper {
+    background-color: transparent;
+    width: 300px;
+  }
+
   .download__background {
-    background-image: url("img/bg-back-tablet.png");
+    min-height: 984px;
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 
 /*Сетка desktop*/
 
 @media (min-width: $desktop) {
+  .download {
+    padding-top: 0;
+    margin-top: 0;
+    background: url("../img/bg-back-desktop.jpg") 100% 100% no-repeat;
+    position: relative;
+  }
+
+  .download__image--wrapper {
+    position: absolute;
+    margin-top: 210px;
+  }
+
+  .download__wrapper {
+    background-color: transparent;
+    width: 300px;
+  }
+
+  .download__background__text {
+    display: block;
+    color: #ffffff;
+    padding: 201px 0 0;
+    font-size: 50px;
+    line-height: 60px;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 -10px;
+  }
+
+  .download__text {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+
+  .download__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 280px;
+  }
+
+  .download__button {
+    margin-bottom: 70px;
+    margin-top: 50px;
+    margin-left: -13px;
+    margin-right: 10px;
+    font-size: 21px;
+    line-height: 18px;
+    font-weight: bold;
+  }
+
   .download__background {
-    background-image: url("img/bg-back-desktop.png");
+    min-height: 855px;
+    padding: 0 270px;
+    font-size: 50px;
   }
 }

@@ -1,0 +1,52 @@
+.background__header {
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  padding-top: 330px;
+  color: #ffffff;
+  font-weight: 100;
+}
+
+@media (min-width: $mobile) {
+  .background__wrapper {
+    min-height: 460px;
+    padding: 0 20px;
+    background: url("../img/bg-back-mobile.jpg") 50% 0 no-repeat;
+    background-size: contain, cover;
+  }
+}
+
+@media (min-width: $tablet) {
+  .background__wrapper {
+    min-height: 550px;
+    padding: 0 20px;
+    background: url("../img/bg-back-tablet.jpg") 100% 100% no-repeat;
+    background-size: contain, cover;
+  }
+
+  .background__header {
+    font-size: 50px;
+    line-height: 55px;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .background__wrapper {
+    margin: 0;
+    background: url("../img/bg-back-desktop.jpg") 100% 100% no-repeat;
+    padding: 100px 0 40px;
+    min-height: 0;
+  }
+
+  .background__header {
+    font-size: 50px;
+    line-height: 63px;
+    text-align: center;
+    margin: 44px auto 60px;
+    width: 500px;
+    color: #ffffff;
+    font-weight: 100;
+    padding-top: 30px;
+  }
+}

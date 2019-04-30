@@ -4,32 +4,127 @@
   line-height: 32px;
 }
 
-.main-nav__link {
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-
 /*Сетка mobile*/
 @media (min-width: $mobile) {
+  /*.main-nav {
+    padding-top: 20px;
+  }*/
+
   .main-nav__list {
     display: block;
+    text-align: center;
+    padding: 0;
+    background-color: #283645;
+    list-style: none;
+    border-bottom: 1px solid #000000;
   }
-}
 
-/*Сетка tablet*/
-@media (min-width: $tablet) {
-  .main-nav__list {
-    display: flex;
-    flex-wrap: wrap;
+  .main-nav__link {
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 65px;
   }
-}
 
-/*Сетка desktop*/
+  .main-nav__item {
+    box-shadow: 0 -1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  }
 
-@media (min-width: $desktop) {
-  .main-nav__list {
-    display: flex;
-    flex-wrap: wrap;
+  .main-nav__toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 23px;
+    border: none;
+    z-index: 9;
+    background: 0 0;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .main-nav__toggle--close {
+    background-image: url("../img/icon-menu-cross.svg");
+    background-position: 27px 0;
+    background-repeat: no-repeat;
+  }
+
+  .main-nav__logo {
+    fill: #ffffff;
+  }
+
+
+  /*Сетка tablet*/
+  @media (min-width: $tablet) {
+    .main-nav__list {
+      display: block;
+      text-align: center;
+      margin: 0;
+      background-color: #283645;
+      list-style: none;
+    }
+
+    .main-nav__toggle {
+      display: block;
+      position: absolute;
+      top: 45px;
+      right: 20px;
+      width: 50px;
+      height: 23px;
+      border: none;
+      z-index: 9;
+      background: 0 0;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .main-nav__toggle--close {
+      background-image: url("../img/icon-menu-cross.svg");
+      background-position: 27px 0;
+      background-repeat: no-repeat;
+    }
+  }
+
+
+  /*Сетка desktop*/
+
+  @media (min-width: $desktop) {
+    .main-nav__list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      min-width: 800px;
+      justify-content: flex-end;
+      margin-left: auto;
+      background-color: transparent;
+      list-style: none;
+    }
+
+    .main-nav__toggle--close {
+      display: none;
+    }
+
+    .main-nav {
+      padding-left: 170px;
+    }
+
+    /*.main-nav {
+      position: absolute;
+      z-index: 2;
+      background: rgba(0,0,0,.3);
+    }*/
+
+    .main-nav__item {
+      background: 0 0;
+      box-shadow: none;
+      padding-right: 83px;
+    }
+
+    .main-nav__link {
+      line-height: 40px;
+      text-transform: none;
+      font-size: 18px;
+      font-weight: 400;
+    }
   }
 }

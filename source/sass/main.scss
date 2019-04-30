@@ -2,10 +2,8 @@
 Правило font-face для шрифтов
 Переменные
 Миксины
-*/
-
-
 /*Шрифты*/
+
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff") format("woff");
@@ -83,22 +81,14 @@ $mobile: 320px;
 $tablet: 660px;
 $desktop: 960px;
 
-
 .container {
+  width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
-  min-width: 320px;
+  padding: 10px;
+  max-width: 960px;
 }
 
 @media (min-width: $tablet) {
-  .container {
-    padding: 0 30px;
-  }
-}
-
-@media (min-width: $desktop) {
-  .container {
-    padding: 0 40px;
-    max-width: 1200px;
-  }
+  /*.container {
+    /*padding: 0 0;  }*/
 }
