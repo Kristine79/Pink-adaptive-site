@@ -35,7 +35,8 @@
   .background__wrapper {
     margin: 0;
     background: url("../img/bg-back-desktop.jpg") 100% 100% no-repeat;
-    padding: 130px 0 40px;
+    padding: 100px 0 40px;
+    min-height: 0px;
   }
 
   .background__header {

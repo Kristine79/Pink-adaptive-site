@@ -78,7 +78,7 @@
           <a class="main-nav__link" href="form.html">Конкурс</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="https://htmlacademy.ru/">HTML ACADEMY</a>
+          <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -89,7 +89,12 @@
         <h1 class="visually-hidden">Приложение Пинк</h1>
         <div class="download__background">
           <div class="container">
+            <div class="download__image--wrapper">
+              <img class="download__hand" src="img/iphone-hand-desktop.png">
+            </div>
+
             <p class="download__background__text">Взгляните на&nbsp;жизнь<br> иначе!</p>
+
             <div class="download__wrapper">
               <a class="download__button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
               <ul class="download__list">
@@ -109,7 +114,7 @@
                   </a>
                 </li>
               </ul>
-              <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+              <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
         </div>
       </section>
@@ -136,15 +141,19 @@
               <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="advantages__item advantages__item--friend">
-              <img class="advantages__image advantages__image--hidden" src="img/iphone-screen-3-desktop.png" alt="Друзья">
+              <div class="advantages__photo">
+              <img class="advantages__image advantages__image--last" src="img/iphone-screen-3-desktop.png" alt="Друзья">
+               </div>
+
+              <div class="advantages__text">
               <h3 class="advantages__title">Заводит новых друзей</h3>
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
             </li>
           </ul>
-        <div class="advantages__last">
+        <!--<div class="advantages__last">
         <img class="advantages__last--image" src="img/iphone-screen-3-desktop.png" alt="Друзья">
-      </div>
-
+      </div>-->
     </div>
   </section>
 
@@ -275,7 +284,7 @@
 
   -->
 
-        <footer class="page-footer page-footer__hidden">
+        <footer class="page-footer__hidden">
           <div class="container">
             <div class="footer-wrapper">
               <a class="footer-logo" href="https://htmlacademy.ru/intensive/adaptive">
@@ -304,9 +313,10 @@
             <div class="page-footer__copyright">
               <b class="copyright__text">Разработано:</b>
               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-               <img class="copyright__image" src="img/logo-htmlacademy.svg" alt="logo">
+                <img class="copyright__image" src="img/logo-htmlacademy.svg" alt="logo">
               </a>
             </div>
+
           </div>
         </div>
       </footer>

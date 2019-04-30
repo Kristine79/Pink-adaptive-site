@@ -18,7 +18,7 @@
 }
 
 .gallery__item {
-  width: 280px;
+  width: 300px;
   margin-bottom: 54px;
 }
 
@@ -38,6 +38,9 @@
     list-style: none;
     padding-left: 0;
   }
+    .gallery__item {
+background-color: #f2f2f2;
+  }
 }
 
 /*Сетка tablet*/
@@ -45,29 +48,10 @@
   .gallery__list {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-/*Сетка desktop*/
-
-@media (min-width: $desktop) {
-  .gallery__title--wrapper {
-    text-align: center;
-    padding-top: 90px;
-    padding-bottom: 90px;
-  }
-
-  .gallery__title {
-    font-size: 18px;
-    line-height: 30px;
-  }
-
-  .gallery__list {
-    display: flex;
-    flex-wrap: wrap;
     list-style: none;
     justify-content: space-around;
-    width: 940px;
+    width: 100%;
+    padding-right: 20px;
   }
 
   .gallery__item__panorama {
@@ -79,9 +63,182 @@
   }
 
   .gallery__item--first {
+    width:100%;
+  }
+
+  .gallery__img {
     width: 100vw;
     position: relative;
     left: calc(-1 * (100vw - 100%) / 2);
+  }
+
+  .gallery__image {
+    width:100%;
+  }
+
+  .gallery__item {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+  }
+
+  .gallery__info {
+    margin-top: auto;
+    padding-left: 27px;
+    padding-right: 41px;
+  }
+
+
+  .gallery__info {
+    position: relative;
+    font-size: 12px;
+    line-height: 24px;
+    color: #d22856;
+    text-transform: uppercase;
+    padding-top: 23px;
+    padding-bottom: 30px;
+  }
+
+  .gallery__icon  {
+    color: #d22856;
+  }
+
+  .gallery__like::after {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    right: 32px;
+    top: 35%;
+    background-image: url(../img/icon-heart.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+.gallery__name {
+      padding-top: 31px;
+    padding-left: 27px;
+    padding-right: 41px;
+    }
+
+  .gallery__text--wrapper {
+    padding-left: 27px;
+    padding-right: 41px;
+  }
+
+  .gallery__text {
+    margin:0;
+  }
+
+  .gallery__author {
+    font-weight: 700px;
+  }
+}
+
+/*Сетка desktop*/
+
+@media (min-width: $desktop) {
+  .gallery__title--wrapper {
+    text-align: center;
+    padding-top: 89px;
+    padding-bottom: 90px;
+  }
+
+  .gallery__title {
+    font-size: 18px;
+    line-height: 30px;
+        margin: 0;
+  }
+
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+    padding-right: 20px;
+  }
+
+
+
+  .gallery__item__panorama {
+    width: 100%;
+  }
+
+  .gallery__image--panorama {
+    display: block;
+  }
+
+  .gallery__item--first {
+    width:100%;
+  }
+
+  .gallery__img {
+    width: 100vw;
+    position: relative;
+    left: calc(-1 * (100vw - 100%) / 2);
+  }
+
+  .gallery__image {
+    width:100%;
+  }
+
+  .gallery__item {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+  }
+
+  .gallery__info {
+    margin-top: auto;
+    padding-left: 27px;
+    padding-right: 41px;
+  }
+
+
+  .gallery__info {
+    position: relative;
+    font-size: 12px;
+    line-height: 24px;
+    color: #d22856;
+    text-transform: uppercase;
+    padding-top: 23px;
+    padding-bottom: 30px;
+  }
+
+  .gallery__icon  {
+    color: #d22856;
+  }
+
+  .gallery__like::after {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    right: 32px;
+    top: 35%;
+    background-image: url(../img/icon-heart.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+.gallery__name {
+      padding-top: 31px;
+    padding-left: 27px;
+    padding-right: 41px;
+    }
+
+  .gallery__text--wrapper {
+    padding-left: 27px;
+    padding-right: 41px;
+  }
+
+  .gallery__text {
+    margin:0;
+  }
+
+  .gallery__author {
+    font-weight: 700px;
   }
 
 }
