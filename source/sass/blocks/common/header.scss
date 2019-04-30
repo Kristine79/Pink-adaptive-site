@@ -34,9 +34,7 @@
 
 
 @media (min-width: $tablet) {
-
-
-  .header__logo-mobile   {
+  .header__logo-mobile {
     display: none;
   }
 
@@ -54,8 +52,6 @@
   }
 }
 
-
-
 @media (min-width: $desktop) {
   .header {
     display: flex;
@@ -64,7 +60,6 @@
     align-items: center;
     margin: 0 auto;
     /*max-width: 960px;*/
-
     min-height: 110px;
     background-color: rgba(0, 0, 0, 0.5);
   }
@@ -80,8 +75,6 @@
   }
 
   .header__logo {
-
-      padding-left: 90px;
-}
-
+    padding-left: 90px;
+  }
 }

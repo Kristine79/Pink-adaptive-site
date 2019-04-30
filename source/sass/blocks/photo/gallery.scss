@@ -38,8 +38,9 @@
     list-style: none;
     padding-left: 0;
   }
-    .gallery__item {
-background-color: #f2f2f2;
+
+  .gallery__item {
+    background-color: #f2f2f2;
   }
 }
 
@@ -63,7 +64,7 @@ background-color: #f2f2f2;
   }
 
   .gallery__item--first {
-    width:100%;
+    width: 100%;
   }
 
   .gallery__img {
@@ -73,7 +74,7 @@ background-color: #f2f2f2;
   }
 
   .gallery__image {
-    width:100%;
+    width: 100%;
   }
 
   .gallery__item {
@@ -83,13 +84,6 @@ background-color: #f2f2f2;
   }
 
   .gallery__info {
-    margin-top: auto;
-    padding-left: 27px;
-    padding-right: 41px;
-  }
-
-
-  .gallery__info {
     position: relative;
     font-size: 12px;
     line-height: 24px;
@@ -97,9 +91,12 @@ background-color: #f2f2f2;
     text-transform: uppercase;
     padding-top: 23px;
     padding-bottom: 30px;
+    margin-top: auto;
+    padding-left: 27px;
+    padding-right: 41px;
   }
 
-  .gallery__icon  {
+  .gallery__icon {
     color: #d22856;
   }
 
@@ -110,16 +107,16 @@ background-color: #f2f2f2;
     height: 14px;
     right: 32px;
     top: 35%;
-    background-image: url(../img/icon-heart.svg);
+    background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
 
-.gallery__name {
-      padding-top: 31px;
+  .gallery__name {
+    padding-top: 31px;
     padding-left: 27px;
     padding-right: 41px;
-    }
+  }
 
   .gallery__text--wrapper {
     padding-left: 27px;
@@ -127,7 +124,7 @@ background-color: #f2f2f2;
   }
 
   .gallery__text {
-    margin:0;
+    margin: 0;
   }
 
   .gallery__author {
@@ -147,7 +144,7 @@ background-color: #f2f2f2;
   .gallery__title {
     font-size: 18px;
     line-height: 30px;
-        margin: 0;
+    margin: 0;
   }
 
   .gallery__list {
@@ -159,8 +156,6 @@ background-color: #f2f2f2;
     padding-right: 20px;
   }
 
-
-
   .gallery__item__panorama {
     width: 100%;
   }
@@ -170,7 +165,7 @@ background-color: #f2f2f2;
   }
 
   .gallery__item--first {
-    width:100%;
+    width: 100%;
   }
 
   .gallery__img {
@@ -180,7 +175,7 @@ background-color: #f2f2f2;
   }
 
   .gallery__image {
-    width:100%;
+    width: 100%;
   }
 
   .gallery__item {
@@ -190,13 +185,6 @@ background-color: #f2f2f2;
   }
 
   .gallery__info {
-    margin-top: auto;
-    padding-left: 27px;
-    padding-right: 41px;
-  }
-
-
-  .gallery__info {
     position: relative;
     font-size: 12px;
     line-height: 24px;
@@ -204,9 +192,12 @@ background-color: #f2f2f2;
     text-transform: uppercase;
     padding-top: 23px;
     padding-bottom: 30px;
+    margin-top: auto;
+    padding-left: 27px;
+    padding-right: 41px;
   }
 
-  .gallery__icon  {
+  .gallery__icon {
     color: #d22856;
   }
 
@@ -217,16 +208,16 @@ background-color: #f2f2f2;
     height: 14px;
     right: 32px;
     top: 35%;
-    background-image: url(../img/icon-heart.svg);
+    background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
 
-.gallery__name {
-      padding-top: 31px;
+  .gallery__name {
+    padding-top: 31px;
     padding-left: 27px;
     padding-right: 41px;
-    }
+  }
 
   .gallery__text--wrapper {
     padding-left: 27px;
@@ -234,11 +225,10 @@ background-color: #f2f2f2;
   }
 
   .gallery__text {
-    margin:0;
+    margin: 0;
   }
 
   .gallery__author {
     font-weight: 700px;
   }
-
 }

@@ -84,15 +84,11 @@ $desktop: 960px;
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   max-width: 960px;
 }
-
 
 @media (min-width: $tablet) {
   /*.container {
     /*padding: 0 0;  }*/
 }
-
-
-
