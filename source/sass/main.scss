@@ -81,6 +81,11 @@ $mobile: 320px;
 $tablet: 660px;
 $desktop: 960px;
 
+/*Ретина*/
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+
 .container {
   width: 100%;
   margin: 0 auto;
