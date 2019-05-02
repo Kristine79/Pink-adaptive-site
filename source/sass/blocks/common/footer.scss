@@ -96,6 +96,7 @@
   .social__list {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 55px;
   }
 
   .page-footer__copyright {
@@ -104,6 +105,15 @@
   }
 
   .page-footer__social {
-    margin-right: 45px;
+    margin-right: 25px;
+    margin-top: 5px;
+  }
+
+  .copyright__text {
+    margin-top: 7px;
+  }
+
+  .copyright__link {
+    padding-top: 20px;
   }
 }
