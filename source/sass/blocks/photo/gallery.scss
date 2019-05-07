@@ -9,6 +9,8 @@
 }
 
 .gallery__time {
+  font-size: 14px;
+  line-height: 24px;
   font-weight: 600px;
 }
 
@@ -97,10 +99,10 @@
   }
 
   .gallery__icon {
-    color: #d22856;
+    fill: #d22856;
   }
 
-  .gallery__like::after {
+  /*.gallery__like::after {
     position: absolute;
     content: "";
     width: 14px;
@@ -110,7 +112,7 @@
     background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-  }
+  }*/
 
   .gallery__name {
     padding-top: 31px;
@@ -130,6 +132,12 @@
   .gallery__author {
     font-weight: 700px;
   }
+
+  .gallery__time {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600px;
+  }
 }
 
 /*Сетка desktop*/
@@ -144,7 +152,8 @@
   .gallery__title {
     font-size: 18px;
     line-height: 30px;
-    margin: 0;
+    margin: 0 auto;
+    width: 640px;
   }
 
   .gallery__list {
@@ -153,7 +162,7 @@
     list-style: none;
     justify-content: space-between;
     width: 100%;
-    margin-top: -13px;
+    margin-top: -15px;
     padding-right: 0;
   }
 
@@ -204,23 +213,21 @@
   }
 
   .gallery__icon {
-    color: #d22856;
+    fill: #d22856;
   }
 
-  .gallery__like::after {
+  /*.gallery__like::after {
     position: absolute;
     content: "";
     width: 14px;
     height: 14px;
     right: 32px;
     top: 35%;
-    background-image: url("../img/icon-heart.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
+
+  }*/
 
   .gallery__name {
-    padding-top: 25px;
+    padding-top: 22px;
     padding-left: 27px;
     padding-right: 41px;
   }
@@ -235,20 +242,29 @@
   }
 
   .gallery__author {
-    font-weight: 700px;
+    font-weight: 700;
   }
 
   .gallery__info--panorama {
     position: absolute;
     right: 0;
-    bottom: 17px;
+    bottom: 18px;
   }
 
   .gallery__like--panorama {
-    padding-right: 20px;
+    padding-right: 21px;
   }
 
   .gallery__text--panorama {
     padding-bottom: 18px;
   }
+
+  .gallery__time {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+  }
 }
+
+/* ФОРМА
+*/

@@ -77,4 +77,19 @@
   .header__logo {
     padding-left: 90px;
   }
+
+  .header__logo-desktop {
+    fill: #ffffff;
+
+  }
+
+  .header__logo-desktop:hover {
+    fill: #d22856;
+    cursor: pointer;
+  }
+
+  .header__logo-desktop:active {
+    opacity: 0.3;
+    cursor: pointer;
+  }
 }
