@@ -1,15 +1,159 @@
-.contacts__text {
-  font-size: 24px;
-  font-weight: 300;
+
+@media (min-width: $mobile) {
+
+  .contacts__text {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 300;
+    text-align: center;
+    width: 222px;
+    margin: 0 auto;
+    padding-bottom: 44px;
+  }
+
+  .contacts__title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+
+  }
+
+  .contacts__link {
+    font-size: 24px;
+    font-weight: 300;
+    color: #d22856;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+  }
+
+  .contacts__section {
+    display: block;
+  }
+
+  .contacts__section--letter {
+    text-align: center;
+
+  }
+
+  .contacts {
+    margin-top: 45px;
+  }
+
+  .contacts__section--guests {
+    width: 212px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
 }
 
-.contacts__title {
-  font-size: 18px;
-  font-weight: 700;
+
+@media (min-width: $tablet) {
+
+  .contacts__text {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 300;
+    text-align: center;
+    width: 463px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+  }
+
+  .contacts__title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+
+  }
+
+  .contacts__link {
+    font-size: 24px;
+    font-weight: 300;
+    color: #d22856;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+  }
+
+  .contacts__section {
+    display: block;
+  }
+
+  .contacts__section--letter {
+    text-align: center;
+
+  }
+
+  .contacts {
+    margin-top: 75px;
+  }
+
+  .contacts__section--guests {
+    width: 212px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
 }
 
-.contacts__link {
-  font-size: 24px;
-  font-weight: 300;
-  color: #d22856;
+
+
+@media (min-width: $desktop) {
+
+  .contacts__text {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 300;
+    text-align: center;
+    width: 463px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+  }
+
+  .contacts__title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+
+  }
+
+  .contacts__link {
+    font-size: 24px;
+    font-weight: 300;
+    color: #d22856;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts {
+    margin-top: 75px;
+  }
+
+  .contacts__section--letter {
+    text-align: center;
+    margin: 0;
+  }
+
+  .contacts__section--guests {
+    width: 212px;
+    text-align: center;
+    margin: 0;
+  }
+
 }
+

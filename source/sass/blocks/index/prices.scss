@@ -1,23 +1,345 @@
+
+@media (min-width: $mobile) {
+.prices-empty {
+    background-color: #f2f2f2;
+    border: none;
+  }
+
 .prices {
-  background-color: #f2f2f2;
+     border-collapse: collapse;
+     border-spacing: 0;
+     background-color: #f2f2f2;
+     background-image: url(../img/bg-triangle-white.svg);
+     background-repeat: no-repeat;
+     background-size: 100% auto;
+     background-position: 50% 0;
+     padding-bottom: 98px;
+   }
+
+   .prices__header {
+    background-color: #f2f2f2;
+  }
+
+  .prices__title {
+    font-size: 16px;
+    line-height: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .prices__text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 300;
+  }
+
+  .prices__header {
+    background-color: #283645;
+    padding-top: 16px;
+    padding-bottom: 22px;
+  }
+
+  .prices__content {
+    font-size: 14px;
+    line-height: 30px;
+    background-color: #ffffff;
+  }
+
+
+  .prices__tariff {
+    padding-top: 16px;
+    padding-right: 37px;
+    padding-bottom: 13px;
+    padding-left: 27px;
+    position: relative;
+  }
+
+  .prices {
+    overflow: hidden;
+  }
+
+  .prices__table {
+    width: 327%;
+    transform: translateX(-48.5%);
+  }
+
+
+  .prices__wrapper {
+    padding-top: 100px;
+  }
+
+  .prices__content {
+    display: block;
+    padding: 13px 24px 16px;
+  }
+
+  .prices__tariff--hit {
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+  }
+
+  .prices__tariff--hit::before{
+    position: absolute;
+    content: "хит";
+    height: 10px;
+    width: 28px;
+    top: 20px;
+    left: 9px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    transform: rotate(-45deg);
+    z-index: 10;
+  }
+
+  .prices__background {
+    background-color: #ffffff;
+  }
+
+  .prices__icon-yes {
+    display:block;
+    margin: 0 auto;
+    fill: #3dc644;
+  }
+
+  .prices__icon-no {
+    display:block;
+    margin: 0 auto;
+    fill: #f25b26;
+  }
 }
 
-.prices__title {
-  font-size: 18px;
-  line-height: 30px;
-  color: #ffffff;
+ @media (min-width: $tablet) {
+    .prices {
+     border-collapse: collapse;
+     border-spacing: 0;
+     background-color: #f2f2f2;
+     background-image: url(../img/bg-triangle-white.svg);
+     background-repeat: no-repeat;
+     background-size: 100% auto;
+     background-position: 50% 0;
+     padding-bottom: 98px;
+   }
+
+   .prices__header {
+    background-color: #f2f2f2;
+  }
+
+  .prices__title {
+    font-size: 16px;
+    line-height: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .prices__text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 300;
+  }
+
+  .prices__header {
+    background-color: #283645;
+    padding-top: 16px;
+    padding-bottom: 22px;
+  }
+
+  .prices__content {
+    font-size: 14px;
+    line-height: 30px;
+    background-color: #ffffff;
+  }
+
+  .prices-empty {
+    background-color: #f2f2f2;
+    border: none;
+
+  }
+
+  .prices__tariff {
+    padding-top: 16px;
+    padding-right: 37px;
+    padding-bottom: 13px;
+    padding-left: 27px;
+    position: relative;
+  }
+
+  .prices__wrapper {
+    padding-top: 100px;
+    width: 600px;
+  }
+
+  .prices__content {
+    display: block;
+    padding: 13px 24px 16px;
+  }
+
+  .prices__tariff--hit {
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+  }
+
+  .prices__tariff--hit::before{
+    position: absolute;
+    content: "хит";
+    height: 10px;
+    width: 28px;
+    top: 20px;
+    left: 9px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    transform: rotate(-45deg);
+    z-index: 10;
+  }
+
+  .prices__background {
+    background-color: #ffffff;
+  }
+
+  .prices__icon-yes {
+    display:block;
+    margin: 0 auto;
+    fill: #3dc644;
+  }
+
+  .prices__icon-no {
+    display:block;
+    margin: 0 auto;
+    fill: #f25b26;
+  }
+
+  .prices__table {
+    width: 100%;
+    transform: none;
+  }
 }
 
-.prices__text {
-  font-size: 24px;
-  line-height: 30px;
-  color: #ffffff;
+
+  @media (min-width: $desktop) {
+
+    .prices__table {
+    width: 100%;
+    transform: none;
+  }
+    .prices {
+     border-collapse: collapse;
+     border-spacing: 0;
+     background-color: #f2f2f2;
+     background-image: url(../img/bg-triangle-white.svg);
+     background-repeat: no-repeat;
+     background-size: 100% auto;
+     background-position: 50% 0;
+     padding-bottom: 98px;
+   }
+
+   .prices__header {
+    background-color: #f2f2f2;
+  }
+
+  .prices__title {
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin:0 auto;
+    text-align: center;
+  }
+
+  .prices__text {
+    font-size: 24px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 300;
+  }
+
+  .prices__header {
+    background-color: #283645;
+    padding-top: 16px;
+    padding-bottom: 22px;
+  }
+
+  .prices__content {
+    font-size: 18px;
+    background-color: #ffffff;
+  }
+
+  .prices-empty {
+    background-color: #f2f2f2;
+    border: none;
+
+  }
+
+  .prices__tariff {
+    padding-top:23px;
+    padding-bottom:23px;
+    padding-right: 70px;
+    padding-left: 67px;
+    position: relative;
+  }
+
+  .prices__wrapper {
+    padding-top: 100px;
+    width: 940px;
+  }
+
+  .prices__content {
+    display: block;
+    min-width: 200px;
+    padding: 13px 24px 16px;
+  }
+
+  .prices__tariff--hit {
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+  }
+
+  .prices__tariff--hit::before{
+    position: absolute;
+    content: "хит";
+    height: 10px;
+    width: 28px;
+    top: 20px;
+    left: 9px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    transform: rotate(-45deg);
+    z-index: 10;
+  }
+
+  .prices__background {
+    background-color: #ffffff;
+  }
+
+  .prices__icon-yes {
+    display:block;
+    margin: 0 auto;
+    fill: #3dc644;
+  }
+
+  .prices__icon-no {
+    display:block;
+    margin: 0 auto;
+    fill: #f25b26;
+  }
 }
 
-.prices__header {
-  background-color: #283645;
-}
-
-.prices__content {
-  background-color: #ffffff;
-}
