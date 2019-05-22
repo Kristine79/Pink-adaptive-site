@@ -1,30 +1,17 @@
-.advantages {
-  background-color: #f2f2f2;
-}
-
-/*.advantages__item {
-  margin: 0 auto 30px;
-}*/
-
-.advantages__description {
-  color: #283645;
-}
-
-.advantages__title-wrapper {
-  text-align: center;
-}
-
 /*Сетка mobile*/
 @media (min-width: $mobile) {
   .advantages {
     background-color: #f2f2f2;
     background-image: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
-    background-size: 960% auto;
+    background-size: 916% auto;
   }
 
   .advantages__description {
+    color: #283645;
     text-align: center;
+    width: 255px;
+    margin: 0 auto;
   }
 
   .advantages__list {
@@ -52,7 +39,8 @@
 
   .advantages__title__main {
     display: inline-block;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
+    margin-top: 40px;
     font-size: 24px;
     line-height: 30px;
     font-weight: 300;
@@ -68,6 +56,7 @@
   .advantages__item--friend {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
   }
 }
 
@@ -84,6 +73,7 @@
     margin: 0;
     padding-bottom: 35px;
     padding-top: 12px;
+    width: 100%;
   }
 
   .advantages__title {
@@ -121,12 +111,12 @@
 
   .advantages__image--last {
     position: absolute;
-    left: 16px;
-    top: 239px;
+    left: 22px;
+    top: 244px;
   }
 
   .advantages__item {
-    padding-left: 320px;
+    padding-left: 307px;
   }
 
   .advantages__item--friend {
@@ -140,7 +130,7 @@
 
   .advantages__title-wrapper {
     padding-top: 0;
-    margin-top: 37px;
+    margin-top: 26px;
   }
 }
 
@@ -165,7 +155,7 @@
   }
 
   .advantages__title-wrapper {
-    padding-top: 15px;
+    padding-top: 29px;
   }
 
   .advantages__image--last {
@@ -188,7 +178,7 @@
 
   .advantages__item {
     max-width: 290px;
-    margin-top: -104px;
+    margin-top: -107px;
     margin-bottom: 0;
     font-size: 18px;
     background-size: 292px auto;

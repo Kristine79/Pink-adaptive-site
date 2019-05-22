@@ -40,6 +40,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+    margin-left: 18px;
+    margin-bottom: 0;
   }
 
   .download {
@@ -56,11 +58,14 @@
   }
 
   .download__image-wrapper {
-    margin-top: 164px;
+    display: inline-block;
+    padding-top: 177px;
+    min-height: 460px;
   }
 
   .download__wrapper {
-    margin-top: 26px;
+    margin-top: 21px;
+    background-color: #17212d;
   }
 
   .download__background-text {
@@ -72,13 +77,17 @@
     line-height: 25px;
     font-weight: 300;
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
+    width: 230px;
+    padding-bottom: 29px;
+    padding-top: 15px;
   }
 
   .download__button {
     font-size: 18px;
     line-height: 18px;
     padding-left: 35px;
+    width: 280px;
   }
 }
 
@@ -98,7 +107,7 @@
 
   .download__section {
     position: absolute;
-    bottom: 124px;
+    bottom: 85px;
   }
 
   .download__image-wrapper {
@@ -115,7 +124,7 @@
     font-weight: 300;
     max-width: 200px;
     text-align: center;
-    margin-left: 61px;
+    margin-left: 49px;
   }
 
   .download__text {
@@ -123,6 +132,7 @@
     text-align: center;
     font-size: 18px;
     line-height: 24px;
+    width: 300px;
   }
 
   .download__list {
@@ -146,9 +156,7 @@
     font-size: 18px;
     line-height: 18px;
     font-weight: bold;
-    margin-right: -9px;
-    margin-left: 11px;
-    padding-left: 44px;
+    width: 300px;
   }
 }
 
@@ -168,7 +176,7 @@
 
   .download__image-wrapper {
     position: absolute;
-    margin-top: 199px;
+    margin-top: 24px;
     margin-left: 17px;
   }
 
@@ -193,6 +201,7 @@
     line-height: 24px;
     font-weight: 300;
     padding-top: 3px;
+    width: 300px;
   }
 
   .download__list {
@@ -200,6 +209,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 290px;
+    margin-left: 0;
   }
 
   .download__button {
@@ -211,6 +221,7 @@
     margin-right: 0;
     padding-left: 29px;
     margin-left: 0;
+    width: 100%;
   }
 
   .download__background {
@@ -227,5 +238,9 @@
   .download__button:active {
     background-color: #ffffff;
     color: rgba(210, 40, 86, 0.3);
+  }
+
+  .download__section {
+    bottom: 89px;
   }
 }

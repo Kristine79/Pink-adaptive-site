@@ -1,5 +1,4 @@
 @media (min-width: $mobile) {
-
   .reviews {
     margin-top: 0;
     position: relative;
@@ -10,7 +9,7 @@
   }
 
   .reviews__text {
-    width: 276px;
+    width: 288px;
     font-size: 14px;
     line-height: 30px;
     color: #283645;
@@ -19,13 +18,13 @@
   }
 
   .reviews__author-name {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 30px;
     font-weight: bold;
     color: #000000;
     text-align: center;
     margin: 0;
-    padding-bottom: 22px;
+    padding-bottom: 13px;
   }
 
   .reviews__author-job {
@@ -34,6 +33,7 @@
 
   .reviews__slider {
     overflow: hidden;
+    margin-top: 45px;
   }
 
   .reviews__list {
@@ -48,13 +48,11 @@
     margin: 0;
   }
 
-
   .reviews__icon-left {
     display: none;
-
   }
 
-  .reviews__icon-right{
+  .reviews__icon-right {
     display: none;
   }
 
@@ -66,8 +64,8 @@
     min-width: 59px;
     min-height: 12px;
     margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 21px;
+    padding-top: 33px;
+    padding-bottom: 37px;
   }
 
   .reviews__button {
@@ -77,25 +75,31 @@
     height: 6px;
     margin-right: 17px;
     background-color: #bec2c7;
-
     border-radius: 50%;
     cursor: pointer;
     padding: 0;
     border: none;
+    color: #283645;
   }
 
-.reviews__button--first {
-  width: 12px;
+  .reviews__button--first {
+    width: 12px;
     height: 12px;
-    background-color: #fff;
+    background-color: #ffffff;
     border: 3px solid #283645;
     border-radius: 50%;
+  }
+
+  .reviews__button:hover {
+    color: #283645;
+    opacity: 0.6;
+  }
+
+  .reviews__button:active {
+    color: #283645;
+    opacity: 0.1;
+  }
 }
-
-}
-
-
-
 
 @media (min-width: $tablet) {
   .reviews {
@@ -103,12 +107,17 @@
     position: relative;
   }
 
+  .reviews__slider {
+    margin-top: 0;
+    overflow: hidden;
+  }
+
   .reviews__quotes {
     display: none;
   }
 
   .reviews__text {
-    width: 617px;
+    width: 620px;
     font-size: 18px;
     line-height: 30px;
     color: #283645;
@@ -117,25 +126,23 @@
   }
 
   .reviews__author-name {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
     font-weight: bold;
     color: #000000;
     text-align: center;
     margin: 0;
-    padding-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 0;
   }
 
   .reviews__author-job {
-    font-size: 18px;
+    display: block;
+    font-size: 14px;
     line-height: 30px;
     color: #283645;
     text-align: center;
     margin: 0;
-  }
-
-  .reviews__slider {
-    overflow: hidden;
   }
 
   .reviews__list {
@@ -146,15 +153,14 @@
   .reviews__item {
     flex-grow: 1;
     margin: 0;
+    flex-direction: column;
   }
-
 
   .reviews__icon-left {
     display: none;
-
   }
 
-  .reviews__icon-right{
+  .reviews__icon-right {
     display: none;
   }
 
@@ -166,8 +172,8 @@
     min-width: 59px;
     min-height: 12px;
     margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 21px;
+    padding-top: 36px;
+    padding-bottom: 0;
   }
 
   .reviews__button {
@@ -177,36 +183,32 @@
     height: 6px;
     margin-right: 17px;
     background-color: #bec2c7;
-
     border-radius: 50%;
     cursor: pointer;
     padding: 0;
     border: none;
   }
 
-.reviews__button--first {
-  width: 12px;
+  .reviews__button--first {
+    width: 12px;
     height: 12px;
-    background-color: #fff;
+    background-color: #ffffff;
     border: 3px solid #283645;
     border-radius: 50%;
-}
-
+  }
 }
 
 @media (min-width: $desktop) {
-
   .reviews {
-    margin-top: 50px;
+    margin-top: 61px;
     position: relative;
-
   }
 
   .reviews__quotes {
     display: block;
     margin: 0 auto;
     fill: #f2f2f2;
-    margin-bottom: 58px;
+    margin-bottom: 50px;
   }
 
   .reviews__text {
@@ -225,7 +227,8 @@
     color: #000000;
     text-align: center;
     margin: 0;
-    padding-top: 30px;
+    padding-top: 36px;
+    padding-bottom: 2px;
   }
 
   .reviews__author-job {
@@ -250,31 +253,49 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-
-
   }
 
   .reviews__icon-left,
-  .reviews__icon-right  {
+  .reviews__icon-right {
+    display: block;
     background: none;
     border: none;
     fill: #283645;
-
+    opacity: 0.3;
   }
 
   .reviews__icon-left {
     position: absolute;
-    top: 50%;
+    top: 47%;
   }
 
-  .reviews__icon-right{
+  .reviews__icon-right {
     position: absolute;
-    top: 50%;
-    right: 18%;
+    top: 47%;
+    right: 25%;
   }
 
   .reviews__toggle {
     display: none;
   }
 
+  .reviews__icon-left:hover {
+    fill: #283645;
+    opacity: 0.6;
+  }
+
+  .reviews__icon-right:hover {
+    fill: #283645;
+    opacity: 0.6;
+  }
+
+  .reviews__icon-left:active {
+    fill: #283645;
+    opacity: 0.1;
+  }
+
+  .reviews__icon-right:active {
+    fill: #283645;
+    opacity: 0.1;
+  }
 }

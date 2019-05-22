@@ -1,18 +1,20 @@
-.background__header {
-  font-size: 24px;
-  line-height: 29px;
-  text-align: center;
-  padding-top: 330px;
-  color: #ffffff;
-  font-weight: 100;
-}
-
 @media (min-width: $mobile) {
   .background__wrapper {
     min-height: 460px;
     padding: 0 20px;
     background: url("../img/bg-back-mobile.jpg") 50% 0 no-repeat;
     background-size: contain, cover;
+  }
+
+  .background__header {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 323px;
+    padding-bottom: 80px;
+    margin-top: 34px;
   }
 }
 
@@ -26,7 +28,12 @@
 
   .background__header {
     font-size: 50px;
-    line-height: 55px;
+    line-height: 59px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 404px;
+    padding-bottom: 139px;
   }
 }
 
@@ -35,7 +42,7 @@
   .background__wrapper {
     margin: 0;
     background: url("../img/bg-back-desktop.jpg") 100% 100% no-repeat;
-    padding: 100px 0 40px;
+    padding: 20px 0 40px;
     min-height: 0;
   }
 
@@ -43,10 +50,11 @@
     font-size: 50px;
     line-height: 63px;
     text-align: center;
-    margin: 44px auto 60px;
-    width: 500px;
+    margin: 41px auto 57px;
+    width: 348px;
     color: #ffffff;
     font-weight: 100;
-    padding-top: 30px;
+    padding-top: 110px;
+    padding-bottom: 0;
   }
 }
