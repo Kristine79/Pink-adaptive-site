@@ -73,6 +73,22 @@ img {
   height: auto;
 }
 
+/* Цвет текста в полях ввода форм*/
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #283645;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #283645;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #283645;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #283645;
+}
+
+
 /*Отступы*/
 $mobile-pads: 20px;
 

@@ -9,15 +9,21 @@
   .contest__list {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding-left: 9px;
+    padding-right: 9px;
   }
 
   .contest__header--hidden {
     visibility: hidden;
   }
 
+  .contest__field--app .contest__list {
+    padding: 0;
+    margin-top: -17px;
+  }
+
   .contest__field--app .contest__list:last-child {
-    margin-bottom: 40px;
+    margin-bottom: 33px;
   }
 
   .contest__field {
@@ -27,6 +33,7 @@
   .contest__field--info {
     border: none;
     order: -1;
+    margin-top: 0;
   }
 
   .contest__header {
@@ -36,7 +43,7 @@
     margin: 0 auto;
     width: 280px;
     text-align: center;
-    padding-top: 4px;
+    padding-top: 33px;
   }
 
   .contest__label {
@@ -48,36 +55,52 @@
 
   .contest__title {
     font-size: 14px;
-    line-height: 30px;
+    line-height: 18px;
     color: #d22856;
     text-transform: uppercase;
     text-align: center;
     width: 230px;
-    padding-top: 30px;
+    padding-top: 36px;
+    padding-bottom: 14px;
   }
 
   .contest__hidden {
     display: none;
   }
 
-  .contest__text,
   .contest__tel,
   .contest__email {
     box-sizing: border-box;
+    font-family: "Open Sans";
     font-size: 18px;
     line-height: 30px;
     width: 100%;
     border: 2px solid #e5e5e5;
     border-radius: 2px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 19px;
+    padding-bottom: 11px;
     padding-right: 35px;
-    padding-left: 23px;
+    padding-left: 19px;
+    margin-bottom: 0;
+  }
+
+  .contest__text {
+    box-sizing: border-box;
+    font-family: "Open Sans";
+    font-size: 18px;
+    line-height: 30px;
+    width: 100%;
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+    padding-top: 19px;
+    padding-bottom: 11px;
+    padding-right: 35px;
+    padding-left: 19px;
     margin-bottom: 16px;
   }
 
   .contest__label--caption {
-    padding-left: 18px;
+    padding-left: 29px;
     margin-bottom: 0;
   }
 
@@ -89,11 +112,12 @@
   }
 
   .contest__wrapper-color--app .contest__list-item {
-    padding-top: 36px;
+    padding-top: 38px;
   }
 
   .contest__field--contacts {
     width: 100%;
+    margin-bottom: 23px;
   }
 
   .contest__field--info .contest__list-item {
@@ -104,7 +128,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .contest__field--contacts .contest__list-item .contest__label {
@@ -151,6 +175,8 @@
     position: relative;
     font-size: 18px;
     line-height: 30px;
+    color: #283645;
+    text-transform: none;
   }
 
   .contest__label--radio::before {
@@ -159,7 +185,7 @@
     vertical-align: middle;
     width: 37px;
     height: 36px;
-    margin-right: 31px;
+    margin-right: 28px;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
     border-radius: 50%;
@@ -223,7 +249,8 @@
     position: absolute;
     display: block;
     top: 9px;
-    left: 5px;
+    left: 3px;
+    height: 16px;
     fill: #d22856;
   }
 
@@ -231,7 +258,7 @@
 
   .contest__wrapper-color--achievements {
     width: 100%;
-    margin-top: 16px;
+    margin-top: 31px;
     background-color: #f2f2f2;
     order: -1;
   }
@@ -242,31 +269,42 @@
     flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
+    padding: 0;
   }
 
   .contest__field--achievements .contest__list-item {
-    padding-top: 20px;
+    padding-top: 23px;
     margin-bottom: 23px;
-    width: 275px;
+  }
+
+  .contest__field--achievements .contest__list-item:last-child {
+    padding-bottom: 12px;
   }
 
   .contest__field--emotion {
     width: 100%;
-    padding-bottom: 35px;
+    padding-bottom: 43px;
     border: none;
     order: 1;
   }
 
+  .contest__title--emotion {
+    padding-top: 20px;
+    padding-bottom: 14px;
+  }
+
   .contest__textarea {
+    font-family: "Open Sans";
     font-size: 18px;
     line-height: 30px;
     color: #283645;
     box-sizing: border-box;
-    width: 100%;
+    width: 280px;
     min-height: 197px;
-    margin-top: 20px;
-    padding-left: 26px;
-    padding-top: 15px;
+    margin-top: 0;
+    margin-left: 7px;
+    padding-left: 19px;
+    padding-top: 13px;
     border: 2px solid #e5e5e5;
     border-radius: 2px;
   }
@@ -291,6 +329,7 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
+    margin-bottom: 13px;
   }
 
   .contest_asterisk {
@@ -308,11 +347,23 @@
     order: 1;
   }
 
+  .contest__list-item:nth-child(1) {
+    order: -1;
+  }
+
+  .contest__list-item:nth-child(4) {
+    order: -1;
+  }
+
+  .contest__list-item:nth-child(5) {
+    order: -1;
+  }
+
   /*модальные окна*/
 
   .contest__modal {
     box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-    visibility: hidden;
+    visibility: none;
   }
 
   .contest__modal--fail {
@@ -322,12 +373,12 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 210%;
+    top: 203%;
     right: 0;
   }
 
   .contest__modal-header {
-    font-color: #000000;
+    color: #000000;
     font-size: 18px;
     line-height: 24px;
     text-align: center;
@@ -375,7 +426,7 @@
   .contest__modal--success {
     background: #ffffff;
     position: absolute;
-    top: 274%;
+    top: 271%;
     right: 0;
     box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
     width: 320px;
@@ -383,10 +434,15 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
+    text-align: center;
   }
 
   .contest__modal-text--success {
     padding-bottom: 0;
+  }
+
+  .contest__modal-button--success {
+    padding: 14px 55px;
   }
 }
 
@@ -404,7 +460,7 @@
   }
 
   .contest__field--app .contest__list {
-    margin-left: 45px;
+    margin-left: 35px;
   }
 
   .contest__field--app .contest__list:last-child {
@@ -414,7 +470,7 @@
   .contest__field {
     border: 2px solid #e5e5e5;
     border-radius: 2px;
-    padding-left: 0;
+    /*padding-left: 0;*/
     margin: 0;
   }
 
@@ -423,6 +479,7 @@
     order: 0;
     margin: 0;
     padding-right: 0;
+    padding-left: 0;
     padding-bottom: 0;
   }
 
@@ -482,17 +539,18 @@
     width: 100%;
     border: 2px solid #e5e5e5;
     border-radius: 2px;
-    padding-top: 14px;
+    padding-top: 12px;
     padding-bottom: 14px;
     padding-right: 87px;
-    padding-left: 23px;
+    padding-left: 20px;
     margin-bottom: 16px;
   }
 
   .contest__label--caption {
     padding-left: 0;
-    padding-right: 16px;
+    padding-right: 14px;
     margin-bottom: 0;
+    padding-bottom: 10px;
   }
 
   .contest__wrapper-color--app {
@@ -520,21 +578,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 22px;
   }
 
   .contest__field--contacts .contest__list-item .contest__label {
     order: 1;
-    padding-left: 20px;
+    padding-left: 21px;
   }
 
   .contest__field--contacts .contest__list-item {
-    margin-top: 8px;
-    margin-bottom: 13px;
+    margin-top: 6px;
+    margin-bottom: 7px;
     flex-direction: column;
     display: flex;
     margin-right: 46px;
-    margin-left: 55px;
+    margin-left: 44px;
     width: 100%;
   }
 
@@ -562,13 +620,14 @@
     fill: #d22856;
   }
 
-  .contest__list-item:nth-child(2) {
+  /*.contest__list-item:nth-child(2) {
     order: 1;
   }
 
   .contest__list-item:nth-child(3) {
     order: -1;
-  }
+  }*/
+
 
   /*Радио кнопки*/
 
@@ -645,7 +704,7 @@
     height: 36px;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
-    margin-right: 22px;
+    margin-right: 15px;
   }
 
   .icon-yes {
@@ -656,8 +715,9 @@
     position: absolute;
     display: block;
     top: 9px;
-    left: 5px;
+    left: 3px;
     fill: #d22856;
+    height: 16px;
   }
 
 
@@ -666,7 +726,7 @@
   .contest__wrapper-color--achievements {
     background: none;
     width: 100%;
-    margin-bottom: 82px;
+    margin-bottom: 51px;
     margin-top: 51px;
   }
 
@@ -676,14 +736,14 @@
     flex-direction: column;
     justify-content: space-between;
     align-content: space-between;
-    margin-left: 40px;
-    padding-top: 17px;
+    margin-left: 36px;
+    padding-top: 11px;
   }
 
   .contest__field--achievements .contest__list-item {
-    padding-top: 20px;
+    padding-top: 23px;
     margin-bottom: 23px;
-    width: 275px;
+    order: 0;
   }
 
   .contest__title--achievements {
@@ -697,11 +757,12 @@
 
   .contest__field--emotion {
     width: 100%;
-    margin-bottom: 65px;
-    padding-bottom: 35px;
+    margin-bottom: 56px;
+    padding-bottom: 44px;
   }
 
   .contest__textarea {
+    font-family: "Open Sans";
     font-size: 18px;
     line-height: 30px;
     color: #283645;
@@ -710,7 +771,7 @@
     min-height: 193px;
     margin-top: 26px;
     padding-left: 21px;
-    margin-left: 54px;
+    margin-left: 44px;
     padding-top: 15px;
     border: 2px solid #e5e5e5;
     border-radius: 2px;
@@ -748,9 +809,11 @@
     color: #283645;
     text-transform: uppercase;
     margin-bottom: 20px;
+    margin-right: -4px
   }
 
   .contest__header--hidden {
+    visibility: visible;
     display: inline-block;
   }
 
@@ -758,12 +821,30 @@
     display: none;
   }
 
+  /*.contest__list-item:nth-child(1) {
+    order: -1;
+  }
+
+  .contest__list-item:nth-child(4) {
+    order: -1;
+  }
+
+  .contest__list-item:nth-child(5) {
+    order: -1;
+  }*/
+
+  .contest__list-item--hotel {
+    padding-bottom: 17px;
+  }
+
+
+
 
   /*модальные окна*/
 
   .contest__modal {
     box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-    visibility: hidden;
+    visibility: visible;
   }
 
   .contest__modal--fail {
@@ -773,12 +854,13 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 140%;
+    top: 165%;
     right: 12%;
+    align-items: center;
   }
 
   .contest__modal-header {
-    font-color: #000000;
+    color: #000000;
     font-size: 30px;
     line-height: 40px;
     text-align: center;
@@ -795,7 +877,7 @@
     text-align: center;
     margin: 0 auto;
     padding-bottom: 30px;
-    width: 295px;
+    width: 304px;
   }
 
   .contest__modal-wrapper {
@@ -826,7 +908,7 @@
   .contest__modal--success {
     background: #ffffff;
     position: absolute;
-    top: 210%;
+    top: 230%;
     right: 14%;
     box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
     width: 460px;
@@ -834,15 +916,26 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
+    text-align: center;
   }
 
   .contest__modal-text--success {
     padding-bottom: 0;
   }
+
+  .contest__modal-button--success {
+    padding: 14px 55px;
+    width: 296px;
+    margin-left: 81px;
+  }
 }
 
 
 @media (min-width: $desktop) {
+  .contest__field--info {
+    margin-top: 13px;
+  }
+
   .contest__form {
     display: flex;
     margin: 0 auto;
@@ -868,11 +961,15 @@
   }
 
   .contest__field--app .contest__list {
-    margin-left: 64px;
+    margin-left: 76px;
+  }
+
+  .contest__field--app .contest__field {
+    padding-left: 13px;
   }
 
   .contest__field--app .contest__list:last-child {
-    margin-bottom: 50px;
+    margin-bottom: 44px;
   }
 
   .contest__field {
@@ -880,6 +977,10 @@
     border-radius: 2px;
     padding-left: 0;
   }
+
+  .contest__field--achievements .contest-field {
+  padding-left: 10px;
+}
 
   .contest__field--info {
     border: none;
@@ -919,96 +1020,103 @@
     color: #d22856;
     text-transform: uppercase;
     text-align: center;
-    padding-left: 38px;
-    padding-right: 38px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .contest__title-app {
-    width: 394px;
+    width: 369px;
   }
 
   .contest__text {
     box-sizing: border-box;
+    font-family: "Open Sans";
     font-size: 18px;
     line-height: 30px;
     width: 100%;
     border: 2px solid #e5e5e5;
     border-radius: 2px;
-    padding-top: 14px;
+    padding-top: 15px;
     padding-bottom: 16px;
-    padding-right: 95px;
-    padding-left: 20px;
-    margin-bottom: 14px;
+    padding-right: 112px;
+    padding-left: 21px;
+    margin-bottom: 15px;
   }
 
 
   .contest__tel,
   .contest__email {
     box-sizing: border-box;
+    font-family: "Open Sans";
     font-size: 18px;
     line-height: 30px;
-    width: 100%;
     border: 2px solid #e5e5e5;
     border-radius: 2px;
     padding-top: 14px;
     padding-bottom: 16px;
     padding-right: 95px;
-    padding-left: 20px;
+    padding-left: 18px;
     margin: 0;
+  }
+
+  .contest__list-item--tel {
+    width: 46%;
   }
 
   .contest__label--caption {
     padding-left: 0;
     padding-right: 18px;
-    margin-bottom: 0;
-    padding-bottom: 18px;
+    margin-bottom: 15px;
   }
 
   .contest__wrapper-color--app {
+    width: 435px;
     list-style: none;
     padding-left: 0;
     background: none;
     margin-bottom: 0;
   }
 
-  .contest__list-item--email {
-    margin-right: 60px;
+  .contest__wrapper-color--app .contest__list-item {
+    padding-top: 38px;
   }
 
-  .contest__list-item--tel {
-    margin-left: 60px;
-  }
+
 
   .contest__field--contacts {
     width: 100%;
-    margin-top: 5px;
+    /*padding-top: 10px;*/
+    padding: 61px 58px 14px;
+    justify-content: space-between;
   }
 
   .contest__field--info .contest__list-item {
     display: flex;
     align-items: center;
+    margin-bottom: 36px;
   }
 
   .contest__field--contacts .contest__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 15px;
+    justify-content: space-between;
+    margin-top: -35px;
   }
 
   .contest__field--contacts .contest__list-item .contest__label {
     order: 1;
     padding-left: 20px;
-    padding: 0;
+    /*padding: 0;*/
+    padding: 9px 0 0 19px;
+    margin: 0;
   }
 
   .contest__field--contacts .contest__list-item {
-    margin-left: 60px;
-    margin-bottom: 0;
+    margin:0;
     flex-direction: column;
     display: flex;
-    width: 370px;
+    width: 374px;
   }
 
   .contest__list--wrapper {
@@ -1020,17 +1128,31 @@
     width: 20px;
     height: 19px;
     top: 22px;
-    right: 22px;
+    right: 21px;
     fill: #d22856;
   }
+
+  /*.contest__list-item--tel {
+    padding-left: 11px;
+  }*/
 
   .contest__icon-email {
     position: absolute;
     width: 20px;
     height: 19px;
-    top: 22px;
-    right: 22px;
+    top: 25px;
+    right: 21px;
     fill: #d22856;
+  }
+
+
+ .contest__icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background-color: #e5e5e5;
+    position: absolute;
+    top: 2px;
+    left: 313px;
   }
 
   .contest__text:hover {
@@ -1044,7 +1166,7 @@
   /*Радио кнопки*/
 
   .contest__radio {
-    appearance: none;
+    display: none;
   }
 
   .contest__label--radio {
@@ -1095,7 +1217,7 @@
 
   /*Чекбоксы*/
   .contest__checkbox {
-    appearance: none;
+    display: none;
   }
 
   .contest__label--checkbox::before {
@@ -1103,10 +1225,10 @@
     display: inline-block;
     vertical-align: middle;
     width: 37px;
-    height: 36px;
+    height: 38px;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
-    margin-right: 22px;
+    margin-right: 16px;
   }
 
   .icon-yes {
@@ -1116,9 +1238,10 @@
   .contest__checkbox:checked + .contest__label--checkbox .icon-yes {
     position: absolute;
     display: block;
-    top: 9px;
-    left: 5px;
+    top: 10px;
+    left: 4px;
     fill: #d22856;
+    height: 16px;
   }
 
 
@@ -1126,10 +1249,14 @@
 
   .contest__wrapper-color--achievements {
     width: 100%;
-    margin-bottom: 52px;
-    margin-top: 55px;
+    margin-bottom: 55px;
+    margin-top: 51px;
     background: none;
     order: 0;
+  }
+
+  .contest__field--achievements {
+    padding-bottom: 27px;
   }
 
   .contest__field--achievements .contest__list {
@@ -1138,30 +1265,33 @@
     flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
-    margin-bottom: 35px;
+    padding-top: 15px;
   }
 
   .contest__field--achievements .contest__list-item {
-    padding-top: 36px;
-    padding-bottom: 10px;
-    width: 275px;
+    padding-bottom: 24px;
+    padding-top: 20px;
     margin-bottom: 0;
+    order: 1;
   }
 
   .contest__field--emotion {
     width: 100%;
-    margin-bottom: 73px;
+    margin-bottom: 63px;
+    padding-bottom: 38px;
   }
 
   .contest__textarea {
     font-size: 18px;
+    font-family: "Open Sans";
     line-height: 30px;
     color: #283645;
-    width: 800px;
+    width: 819px;
     box-sizing: border-box;
-    min-height: 124px;
-    margin-top: 20px;
-    padding-top: 18px;
+    min-height: 128px;
+    margin-top: 21px;
+    padding-top: 14px;
+    margin-left: 57px;
     border: 2px solid #e5e5e5;
     border-radius: 2px;
   }
@@ -1197,6 +1327,7 @@
     line-height: 30px;
     color: #283645;
     text-transform: uppercase;
+    margin-bottom: 0;
   }
 
   .contest__submit:hover {
@@ -1212,12 +1343,43 @@
     border: #1c9b5e;
   }
 
+  .contest__list-item--shark {
+    width: 309px;
+    padding-left: 19px;
+  }
+
+  .contest__list-item--chaknorris {
+    width: 291px;
+    padding-left: 16px;
+  }
+
+  .contest__list-item--tower {
+    width: 266px;
+    padding-left: 10px;
+  }
+
+  .contest__list-item--beach {
+    width: 309px;
+    padding-left: 19px;
+  }
+
+  .contest__list-item--souvenir {
+    width: 291px;
+    padding-left: 16px;
+  }
+
+  .contest__list-item--hotel {
+    width: 266px;
+    padding-left: 10px;
+  }
+
+
 
   /*модальные окна*/
 
   .contest__modal {
     box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-    visibility: hidden;
+    visibility: none;
   }
 
   .contest__modal--fail {
@@ -1227,18 +1389,19 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 94%;
+    top: 88%;
     right: 29%;
   }
 
   .contest__modal-header {
-    font-color: #000000;
+    color: #000000;
     font-size: 30px;
     line-height: 40px;
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 40px;
+    width: 400px;
   }
 
   .contest__modal-text {
@@ -1272,10 +1435,14 @@
     flex-grow: 1;
   }
 
+  .contest__modal-button--fail {
+    width: 296px;
+  }
+
   .contest__modal--success {
     background: #ffffff;
     position: absolute;
-    top: 143%;
+    top: 138%;
     right: 29%;
     box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
     width: 780px;
@@ -1283,11 +1450,11 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
+    text-align: center;
   }
 
   .contest__modal-button--success {
-    padding: 14px 240px;
-    margin-right: 134px;
-    margin-left: 134px;
+    margin-left: 167px;
+    width: 456px;
   }
 }

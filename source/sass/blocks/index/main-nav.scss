@@ -145,7 +145,11 @@
   .main-nav__item {
     background: 0 0;
     box-shadow: none;
-    padding-right: 83px;
+    padding-right: 80px;
+  }
+
+  .main-nav__item:last-child {
+    margin-right: 8px;
   }
 
   .main-nav__link {

@@ -4,8 +4,9 @@
   }
 
   .map__wrapper {
-    display: block;
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
   }
 
@@ -27,8 +28,9 @@
   }
 
   .map__wrapper {
-    display: block;
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
   }
 
@@ -50,9 +52,11 @@
   }
 
   .map__wrapper {
-    display: block;
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
   }
 
   .map__triangle {
@@ -64,4 +68,16 @@
     height: 512px;
     width: 100%;
   }
+}
+
+  @media  screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   /* IE10+ specific styles go here */
+   .map__wrapper {
+    position: absolute;
+    top: -161px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
 }

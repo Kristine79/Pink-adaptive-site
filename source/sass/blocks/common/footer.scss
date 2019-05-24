@@ -12,19 +12,11 @@
 }
 
 .social__link {
-  position: absolute;
   fill: #d22856;
 }
 
 .social__list {
   list-style: none;
-}
-
-.copyright__text {
-  margin-right: 14px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 18px;
 }
 
 
@@ -74,13 +66,34 @@
 
   .copyright__text {
     font-size: 14px;
-    font-weight: 18px;
+    line-height: 18px;
+    font-weight: normal;
     margin-top: 6px;
+    margin-right: 14px;
   }
 
   .copyright__image {
     fill: #d22856;
   }
+
+  .footer__logo {
+    margin-bottom: 19px;
+  }
+
+  .page-footer__social {
+    margin-right: 28px;
+    margin-bottom: 25px;
+  }
+
+  .footer__logo-tablet,
+  .footer__logo-desktop {
+    display: none;
+  }
+
+  .footer__logo-mobile {
+   display: block;
+  }
+
 }
 
 /*Сетка для планшета*/
@@ -99,6 +112,11 @@
     align-items: center;
   }
 
+  .footer-wrapper--photo {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
   .social__list {
     display: flex;
     flex-wrap: wrap;
@@ -107,7 +125,7 @@
   .page-footer__copyright {
     display: flex;
     align-items: center;
-    margin-bottom: 0;
+    margin-bottom: 35px;
   }
 
   .copyright__link {
@@ -115,7 +133,7 @@
   }
 
   .page-footer__social {
-    margin-right: 21px;
+    margin-right: 48px;
   }
 
   .copyright__image {
@@ -132,10 +150,22 @@
   }
 
   .copyright__text {
-    margin-right: 14px;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 14px;
     line-height: 18px;
+    margin-right: 14px;
+  }
+
+  .footer__logo {
+    margin-bottom: 37px;
+  }
+
+  .footer__logo-mobile,
+  .footer__logo-desktop {
+    display: none;
+  }
+
+  .footer__logo-tablet {
+    display: block;
   }
 }
 
@@ -146,6 +176,10 @@
     display: block;
   }
 
+  .footer__logo {
+    margin-bottom: 22px;
+    }
+
   .footer-wrapper {
     display: flex;
     flex-direction: row;
@@ -153,8 +187,8 @@
     flex-wrap: wrap;
     align-items: center;
     width: 940px;
-    padding-top: 37px;
-    padding-bottom: 87px;
+    padding-top: 31px;
+    /*padding-bottom: 87px;*/
   }
 
   .social__list {
@@ -170,16 +204,19 @@
   }
 
   .page-footer__social {
-    margin-right: 20px;
+    margin-right: 13px;
     margin-top: 5px;
   }
 
   .copyright__text {
-    margin-top: 7px;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: -13px;
   }
 
   .copyright__link {
-    padding-top: 10px;
+    padding-top: 0;
+    margin-top: 0;
   }
 
   .social__button:hover {
@@ -206,5 +243,14 @@
   .copyright__image:active {
     fill: #283645;
     opacity: 0.3;
+  }
+
+  .footer__logo-mobile,
+  .footer__logo-tablet {
+    display: none;
+  }
+
+  .footer__logo-desktop {
+    display: block;
   }
 }
