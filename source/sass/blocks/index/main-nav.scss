@@ -53,6 +53,10 @@
     fill: #ffffff;
   }
 
+  .main-nav__toggle--close {
+    fill: #ffffff;
+  }
+
   .main-nav__toggle--close:hover {
     fill: #d22856;
   }
@@ -91,14 +95,6 @@
     outline: none;
   }
 
-  /*
-  .main-nav__toggle--close {
-    background-image: url("../img/icon-menu-cross.svg");
-    background-position: 27px 0;
-    background-repeat: no-repeat;
-  }
-  */
-
   .main-nav__link:hover {
     color: #d22856;
   }
@@ -106,6 +102,10 @@
   .main-nav__link:active {
     color: #d22856;
     opacity: 0.3;
+  }
+
+  .main-nav__toggle--close {
+    fill: #ffffff;
   }
 
   .main-nav__toggle--close:hover {
@@ -157,6 +157,7 @@
     text-transform: none;
     font-size: 18px;
     font-weight: 400;
+    border-bottom: 2px solid transparent
   }
 
   .main-nav__link:hover {
@@ -168,10 +169,13 @@
     opacity: 0.3;
   }
 
-  .main-nav__item:active .main-nav__link::after {
+  /*.main-nav__item:active .main-nav__link::after {
     content: "";
     display: block;
     border-bottom: 2px solid #ffffff;
-    padding-bottom: 3px;
+  }*/
+
+  .main-nav__link--active {
+    border-bottom: 2px solid #ffffff;
   }
 }

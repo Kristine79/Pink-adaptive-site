@@ -353,8 +353,6 @@
 
   .gallery__item--tablet {
     width: 300px;
-    margin-left: -2px;
-    margin-right: -2px;
   }
 
   .gallery__info {
@@ -664,9 +662,13 @@
 /*Сетка desktop*/
 
 @media (min-width: $desktop) {
+  .gallery {
+    padding-bottom: 10px;
+  }
+
   .gallery__title--wrapper {
     text-align: center;
-    padding-top: 92px;
+    padding-top: 41px;
     padding-bottom: 90px;
   }
 
@@ -717,6 +719,7 @@
     flex-direction: column;
     background-color: #f2f2f2;
     position: relative;
+    margin-bottom: 51px;
   }
 
   .gallery__info {
@@ -772,15 +775,15 @@
   .gallery__info--panorama {
     position: absolute;
     right: 0;
-    bottom: 18px;
+    bottom: 24px;
   }
 
   .gallery__like--panorama {
-    padding-right: 21px;
+    padding-right: 18px;
   }
 
   .gallery__text--panorama {
-    padding-bottom: 18px;
+    padding-bottom: 23px;
   }
 
   .gallery__time {
@@ -803,10 +806,11 @@
 
   .gallery__photo-sticker {
     position: absolute;
-    padding: 7px 23px 6px;
+    padding: 7px 20px 5px;
     right: 130px;
     top: 54px;
     font-size: 12px;
+    font-weight: 700;
     line-height: 24px;
     color: #ffffff;
     text-transform: uppercase;
@@ -816,12 +820,14 @@
   /* ФОРМА */
 
   .gallery__edit {
-    margin-bottom: 23px;
+    margin-bottom: 66px;
   }
 
   .gallery__edit__form {
     background-color: #f2f2f2;
     padding-bottom: 57px;
+    width: 940px;
+    margin: 0 auto;
   }
 
   .gallery__edit__form-wrapper {
@@ -840,8 +846,8 @@
   .gallery__edit-image {
     width: 300px;
     height: 400px;
-    margin-left: 80px;
-    margin-right: 90px;
+    margin-left: 79px;
+    margin-right: 93px;
   }
 
   .gallery__edit-header {
@@ -882,7 +888,7 @@
   .gallery__controls-bar {
     height: 2px;
     background-color: #283645;
-    margin-top: 19px;
+    margin-top: 20px;
   }
 
   .gallery__controls-toggle {
@@ -899,15 +905,15 @@
   }
 
   .gallery__controls-toggle--crop {
-    left: 163px;
+    left: 161px;
   }
 
   .gallery__controls-toggle--size {
-    left: 339px;
+    left: 337px;
   }
 
   .gallery__controls-toggle--contrast {
-    left: 252px;
+    left: 250px;
   }
 
   .gallery__tool {
@@ -916,17 +922,18 @@
   }
 
   .gallery__tool--crop {
-    top: -23px;
-    left: -3px;
+    top: -21px;
+    left: -2px;
   }
 
   .gallery__tool--size {
     top: 52px;
+    left: 0;
   }
 
   .gallery__tool--contrast {
-    top: 127px;
-    left: 6px;
+    top: 128px;
+    left: 4px;
   }
 
   .gallery__tool:hover {
@@ -938,7 +945,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin-top: 146px;
+    margin-top: 147px;
   }
 
   .gallery__tool-button {

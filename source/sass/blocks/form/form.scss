@@ -938,6 +938,7 @@
     justify-content: space-between;
     padding-bottom: 0;
     position: relative;
+    margin-bottom: 14px;
   }
 
   .contest__textfield--hidden {
@@ -963,7 +964,7 @@
   }
 
   .contest__field--app .contest__list:last-child {
-    margin-bottom: 44px;
+    margin-bottom: 46px;
   }
 
   .contest__field {
@@ -1018,6 +1019,8 @@
     text-align: center;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .contest__title-app {
@@ -1062,7 +1065,7 @@
   .contest__label--caption {
     padding-left: 0;
     padding-right: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 3px;
   }
 
   .contest__wrapper-color--app {
@@ -1217,11 +1220,11 @@
     content: "";
     display: inline-block;
     vertical-align: middle;
-    width: 37px;
+    width: 38px;
     height: 38px;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
-    margin-right: 16px;
+    margin-right: 18px;
   }
 
   .icon-yes {
@@ -1231,8 +1234,8 @@
   .contest__checkbox:checked + .contest__label--checkbox .icon-yes {
     position: absolute;
     display: block;
-    top: 10px;
-    left: 4px;
+    top: 9px;
+    left: 7px;
     fill: #d22856;
     height: 16px;
   }
@@ -1242,7 +1245,7 @@
 
   .contest__wrapper-color--achievements {
     width: 100%;
-    margin-bottom: 55px;
+    margin-bottom: 53px;
     margin-top: 51px;
     background: none;
     order: 0;
@@ -1259,19 +1262,21 @@
     justify-content: space-between;
     align-content: space-between;
     padding-top: 15px;
+    margin-left: 39px;
+    margin-right: 3px;
   }
 
   .contest__field--achievements .contest__list-item {
-    padding-bottom: 24px;
-    padding-top: 20px;
+    padding-bottom: 25px;
+    padding-top: 19px;
     margin-bottom: 0;
     order: 1;
   }
 
   .contest__field--emotion {
     width: 100%;
-    margin-bottom: 63px;
-    padding-bottom: 38px;
+    margin-bottom: 65px;
+    padding-bottom: 35px;
   }
 
   .contest__textarea {
@@ -1282,7 +1287,7 @@
     width: 819px;
     box-sizing: border-box;
     min-height: 128px;
-    margin-top: 21px;
+    margin-top: 24px;
     padding-top: 14px;
     margin-left: 57px;
     border: 2px solid #e5e5e5;
@@ -1321,6 +1326,7 @@
     color: #283645;
     text-transform: uppercase;
     margin-bottom: 0;
+    margin-right: 0;
   }
 
   .contest__submit:hover {

@@ -33,7 +33,7 @@
 
   .reviews__slider {
     overflow: hidden;
-    margin-top: 45px;
+    margin-top: 71px;
   }
 
   .reviews__list {
@@ -131,7 +131,7 @@
     font-weight: bold;
     color: #000000;
     text-align: center;
-    margin: 0;
+    margin-left: -6px;
     padding-top: 35px;
     padding-bottom: 0;
   }
@@ -142,7 +142,8 @@
     line-height: 30px;
     color: #283645;
     text-align: center;
-    margin: 0;
+    margin-top: 2px;
+    margin-left: -5px;
   }
 
   .reviews__list {
@@ -172,8 +173,9 @@
     min-width: 59px;
     min-height: 12px;
     margin: 0 auto;
-    padding-top: 36px;
+    padding-top: 20px;
     padding-bottom: 0;
+    padding-left: 12px;
   }
 
   .reviews__button {
@@ -266,13 +268,14 @@
 
   .reviews__icon-left {
     position: absolute;
-    top: 47%;
+    top: 150px;
+    left: 124px;
   }
 
   .reviews__icon-right {
     position: absolute;
-    top: 47%;
-    right: 25%;
+    top: 150px;
+    right: 124px;
   }
 
   .reviews__toggle {

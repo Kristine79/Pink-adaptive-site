@@ -124,7 +124,7 @@
   .page-footer__copyright {
     display: flex;
     align-items: center;
-    margin-bottom: 35px;
+    margin-bottom: 21px;
   }
 
   .copyright__link {
@@ -176,7 +176,7 @@
   }
 
   .footer__logo {
-    margin-bottom: 22px;
+    margin-bottom: 32px;
   }
 
   .footer-wrapper {
@@ -186,7 +186,7 @@
     flex-wrap: wrap;
     align-items: center;
     width: 940px;
-    padding-top: 31px;
+    /*padding-top: 31px;*/
     /*padding-bottom: 87px;*/
   }
 
@@ -203,8 +203,8 @@
   }
 
   .page-footer__social {
-    margin-right: 13px;
-    margin-top: 5px;
+    margin-right: 22px;
+    margin-top: 12px;
   }
 
   .copyright__text {
@@ -251,5 +251,14 @@
 
   .footer__logo-desktop {
     display: block;
+  }
+
+  .page-footer__social--photo {
+    margin-right: 12px;
+  }
+
+
+  .page-footer__social--form {
+    margin-right: 13px;
   }
 }

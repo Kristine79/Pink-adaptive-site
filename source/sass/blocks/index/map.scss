@@ -47,6 +47,8 @@
 @media (min-width: $desktop) {
   .map {
     position: relative;
+    margin-bottom: 33px;
+    overflow: hidden;
   }
 
   .map__wrapper {
@@ -63,7 +65,7 @@
 
   .map__code {
     border: 0;
-    height: 512px;
+    height: 504px;
     width: 100%;
   }
 }

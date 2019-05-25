@@ -12,8 +12,8 @@
   }
 
   .effect__container {
-    margin-top: 33px;
-    padding-right: 31px;
+    margin-top: 37px;
+    padding-right: 0;
     width: 520px;
     line-height: 35px;
   }
@@ -39,19 +39,20 @@
   .effect__text {
     line-height: 1.8em;
     margin: 0;
+    width: 296px;
   }
 
   .effect__wrapper {
-    padding: 45px 0 0 0;
+    padding: 41px 2px 3px 21px;
     display: flex;
     justify-content: flex-start;
     position: relative;
   }
 
   .effect__wrapper::before {
-    width: 432px;
-    height: 348px;
-    margin: 0 58px 0 10px;
+    width: 374px;
+    height: 349px;
+    margin: 0 72px 0 -1px;
     display: block;
     background: url("../img/icon-timer.svg") no-repeat scroll;
     content: " ";
@@ -62,7 +63,7 @@
     width: 202px;
     height: 202px;
     position: absolute;
-    top: 97px;
+    top: 95px;
     left: 39px;
     content: "24";
     color: #d22856;
