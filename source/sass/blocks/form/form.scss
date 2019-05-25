@@ -71,7 +71,7 @@
   .contest__tel,
   .contest__email {
     box-sizing: border-box;
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 30px;
     width: 100%;
@@ -86,7 +86,7 @@
 
   .contest__text {
     box-sizing: border-box;
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 30px;
     width: 100%;
@@ -294,7 +294,7 @@
   }
 
   .contest__textarea {
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 30px;
     color: #283645;
@@ -363,7 +363,7 @@
 
   .contest__modal {
     box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-    visibility: none;
+    visibility: hidden;
   }
 
   .contest__modal--fail {
@@ -475,7 +475,7 @@
   }
 
   .contest__field--info {
-    border: none;
+    border: 0;
     order: 0;
     margin: 0;
     padding-right: 0;
@@ -762,7 +762,7 @@
   }
 
   .contest__textarea {
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 30px;
     color: #283645;
@@ -809,7 +809,7 @@
     color: #283645;
     text-transform: uppercase;
     margin-bottom: 20px;
-    margin-right: -4px
+    margin-right: -4px;
   }
 
   .contest__header--hidden {
@@ -838,13 +838,11 @@
   }
 
 
-
-
   /*модальные окна*/
 
   .contest__modal {
     box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-    visibility: visible;
+    visibility: hidden;
   }
 
   .contest__modal--fail {
@@ -932,10 +930,6 @@
 
 
 @media (min-width: $desktop) {
-  .contest__field--info {
-    margin-top: 13px;
-  }
-
   .contest__form {
     display: flex;
     margin: 0 auto;
@@ -951,7 +945,7 @@
   }
 
   .contest__header--hidden {
-    visibility: visible;
+    visibility: none;
   }
 
   .contest__list {
@@ -978,12 +972,14 @@
     padding-left: 0;
   }
 
-  .contest__field--achievements .contest-field {
-  padding-left: 10px;
-}
-
   .contest__field--info {
+    border: 0;
+    margin-top: 13px;
     border: none;
+  }
+
+  .contest__field--achievements .contest-field {
+    padding-left: 10px;
   }
 
   .contest__header {
@@ -1030,7 +1026,7 @@
 
   .contest__text {
     box-sizing: border-box;
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 30px;
     width: 100%;
@@ -1047,7 +1043,7 @@
   .contest__tel,
   .contest__email {
     box-sizing: border-box;
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 30px;
     border: 2px solid #e5e5e5;
@@ -1081,8 +1077,6 @@
     padding-top: 38px;
   }
 
-
-
   .contest__field--contacts {
     width: 100%;
     /*padding-top: 10px;*/
@@ -1113,7 +1107,7 @@
   }
 
   .contest__field--contacts .contest__list-item {
-    margin:0;
+    margin: 0;
     flex-direction: column;
     display: flex;
     width: 374px;
@@ -1145,8 +1139,7 @@
     fill: #d22856;
   }
 
-
- .contest__icon-wrapper {
+  .contest__icon-wrapper {
     width: 60px;
     height: 60px;
     background-color: #e5e5e5;
@@ -1283,7 +1276,7 @@
 
   .contest__textarea {
     font-size: 18px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     line-height: 30px;
     color: #283645;
     width: 819px;
@@ -1373,13 +1366,11 @@
     padding-left: 10px;
   }
 
-
-
   /*модальные окна*/
 
   .contest__modal {
     box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-    visibility: none;
+    visibility: hidden;
   }
 
   .contest__modal--fail {
