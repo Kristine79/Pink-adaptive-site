@@ -1,18 +1,37 @@
-.background__header {
-  font-size: 24px;
-  line-height: 29px;
-  text-align: center;
-  padding-top: 330px;
-  color: #ffffff;
-  font-weight: 100;
-}
-
 @media (min-width: $mobile) {
   .background__wrapper {
     min-height: 460px;
     padding: 0 20px;
     background: url("../img/bg-back-mobile.jpg") 50% 0 no-repeat;
     background-size: contain, cover;
+    background-color: #243340;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+    }
+  }
+
+  .background__header {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 323px;
+    padding-bottom: 80px;
+    margin-top: 34px;
+  }
+
+  .background__header-form {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    margin: 34px auto 14px;
+    width: 231px;
+    color: #ffffff;
+    padding-top: 322px;
+    padding-bottom: 0;
+    font-weight: 300;
   }
 }
 
@@ -22,31 +41,70 @@
     padding: 0 20px;
     background: url("../img/bg-back-tablet.jpg") 100% 100% no-repeat;
     background-size: contain, cover;
+    background-color: #243340;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .background__header {
     font-size: 50px;
-    line-height: 55px;
+    line-height: 59px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 404px;
+    padding-bottom: 139px;
+  }
+
+  .background__header-form {
+    font-size: 50px;
+    line-height: 60px;
+    color: #ffffff;
+    text-align: center;
+    margin: 145px 70px 33px;
+    width: 480px;
+    font-weight: 100;
+    padding-top: 290px;
+    padding-bottom: 7px;
   }
 }
-
 
 @media (min-width: $desktop) {
   .background__wrapper {
     margin: 0;
     background: url("../img/bg-back-desktop.jpg") 100% 100% no-repeat;
-    padding: 100px 0 40px;
+    padding: 20px 0 40px;
     min-height: 0;
+    background-color: #243340;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .background__header {
     font-size: 50px;
-    line-height: 63px;
+    line-height: 61px;
     text-align: center;
-    margin: 44px auto 60px;
-    width: 500px;
+    margin: 45px auto 58px;
+    width: 360px;
     color: #ffffff;
     font-weight: 100;
-    padding-top: 30px;
+    padding-top: 109px;
+    padding-bottom: 0;
+  }
+
+  .background__header-form {
+    font-size: 50px;
+    line-height: 63px;
+    text-align: center;
+    margin: 41px auto 57px;
+    width: 750px;
+    color: #ffffff;
+    font-weight: 100;
+    padding-top: 110px;
+    padding-bottom: 0;
   }
 }

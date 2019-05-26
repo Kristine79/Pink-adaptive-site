@@ -1,3 +1,95 @@
-.map {
-  // комментарий
+@media (min-width: $mobile) {
+  .map {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 33px;
+    height: 200px;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+    }
+  }
+
+  .map__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 100% 0;
+  }
+
+  .map__code {
+    border: 0;
+    height: 200px;
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet) {
+  .map {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+    height: 370px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  .map__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 100% 0;
+  }
+
+  .map__code {
+    border: 0;
+    height: 370px;
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .map {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 33px;
+    height: 504px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+
+  .map__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 100% 0;
+  }
+
+  .map__code {
+    border: 0;
+    height: 504px;
+    width: 100%;
+  }
 }

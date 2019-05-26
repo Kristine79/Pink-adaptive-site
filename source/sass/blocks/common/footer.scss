@@ -12,19 +12,11 @@
 }
 
 .social__link {
-  position: absolute;
   fill: #d22856;
 }
 
 .social__list {
   list-style: none;
-}
-
-.copyright__text {
-  margin-right: 14px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 18px;
 }
 
 
@@ -35,6 +27,19 @@
     display: none;
   }
 
+  .page-footer--photo {
+    display: block;
+  }
+
+  .footer-wrapper--photo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+  }
+
   .social__list {
     display: flex;
   }
@@ -42,12 +47,60 @@
   .page-footer {
     text-align: center;
   }
+
+  .page-footer--form {
+    display: block;
+    margin-top: 40px;
+  }
+
+  .footer-wrapper--form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-footer__copyright {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  .copyright__text {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    margin-top: 8px;
+    margin-right: 14px;
+  }
+
+  .copyright__image {
+    fill: #d22856;
+  }
+
+  .footer__logo {
+    margin-bottom: 24px;
+  }
+
+  .page-footer__social {
+    margin-right: 28px;
+    margin-bottom: 25px;
+  }
+
+  .footer__logo-tablet,
+  .footer__logo-desktop {
+    display: none;
+  }
+
+  .footer__logo-mobile {
+    display: block;
+  }
 }
 
 /*Сетка для планшета*/
+
 @media (min-width: $tablet) {
   .page-footer__hidden {
     display: block;
+    margin-top: 0;
   }
 
   .footer-wrapper {
@@ -56,8 +109,11 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    padding-top: 39px;
-    padding-bottom: 42px;
+  }
+
+  .footer-wrapper--photo {
+    margin-bottom: 0;
+    margin-top: 0;
   }
 
   .social__list {
@@ -68,10 +124,15 @@
   .page-footer__copyright {
     display: flex;
     align-items: center;
+    margin-bottom: 26px;
+  }
+
+  .copyright__link {
+    margin-top: 15px;
   }
 
   .page-footer__social {
-    margin-right: 45px;
+    margin-right: 48px;
   }
 
   .copyright__image {
@@ -86,6 +147,25 @@
     color: #283645;
     opacity: 0.3;
   }
+
+  .copyright__text {
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 14px;
+  }
+
+  .footer__logo {
+    margin-bottom: 37px;
+  }
+
+  .footer__logo-mobile,
+  .footer__logo-desktop {
+    display: none;
+  }
+
+  .footer__logo-tablet {
+    display: block;
+  }
 }
 
 /*Сетка desktop*/
@@ -93,6 +173,11 @@
 @media (min-width: $desktop) {
   .page-footer__hidden {
     display: block;
+    margin-top: 17px;
+  }
+
+  .footer__logo {
+    margin-bottom: 32px;
   }
 
   .footer-wrapper {
@@ -102,8 +187,6 @@
     flex-wrap: wrap;
     align-items: center;
     width: 940px;
-    padding-top: 70px;
-    padding-bottom: 87px;
   }
 
   .social__list {
@@ -115,19 +198,23 @@
   .page-footer__copyright {
     display: flex;
     align-items: center;
+    margin-bottom: 0;
   }
 
   .page-footer__social {
-    margin-right: 25px;
-    margin-top: 5px;
+    margin-right: 22px;
+    margin-top: 12px;
   }
 
   .copyright__text {
-    margin-top: 7px;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: -13px;
   }
 
   .copyright__link {
-    padding-top: 20px;
+    padding-top: 0;
+    margin-top: 0;
   }
 
   .social__button:hover {
@@ -154,5 +241,23 @@
   .copyright__image:active {
     fill: #283645;
     opacity: 0.3;
+  }
+
+  .footer__logo-mobile,
+  .footer__logo-tablet {
+    display: none;
+  }
+
+  .footer__logo-desktop {
+    display: block;
+  }
+
+  .page-footer__social--photo {
+    margin-right: 12px;
+  }
+
+
+  .page-footer__social--form {
+    margin-right: 13px;
   }
 }
