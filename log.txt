@@ -1,0 +1,20 @@
+
+> pink-16@16.0.0 test c:\github\82297-pink-16
+> npm run editorconfig && npm run stylelint
+
+
+> pink-16@16.0.0 editorconfig c:\github\82297-pink-16
+> editorconfig-cli
+
+Using '.editorconfig' from: "c:\github\82297-pink-16\.editorconfig"
+Loaded GLOBs from 'c:\github\82297-pink-16\package.json': *.json,*.js,source/*.html,source/js/**/*.js,source/img/**/*.svg,source/sass/**/*.{sass,scss}
+
+> pink-16@16.0.0 test c:\github\82297-pink-16
+> npm run editorconfig && npm run stylelint
+
+
+> pink-16@16.0.0 editorconfig c:\github\82297-pink-16
+> editorconfig-cli
+
+Using '.editorconfig' from: "c:\github\82297-pink-16\.editorconfig"
+Loaded GLOBs from 'c:\github\82297-pink-16\package.json': *.json,*.js,source/*.html,source/js/**/*.js,source/img/**/*.svg,source/sass/**/*.{sass,scss}

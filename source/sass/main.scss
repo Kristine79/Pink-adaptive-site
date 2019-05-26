@@ -7,6 +7,7 @@
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -14,6 +15,7 @@
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensansbold.woff") format("woff");
+  src: url("../fonts/opensansbold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -21,6 +23,7 @@
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensanslight.woff") format("woff");
+  src: url("../fonts/opensanslight.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
 }
@@ -73,6 +76,25 @@ img {
   height: auto;
 }
 
+/* Цвет текста в полях ввода форм*/
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #283645;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: #283645;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  color: #283645;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #283645;
+}
+
+
 /*Отступы*/
 $mobile-pads: 20px;
 
@@ -85,15 +107,26 @@ $desktop: 960px;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 10px;
-  max-width: 960px;
+@media (min-width: $mobile) {
+  .container {
+    padding: 0;
+  }
 }
 
 @media (min-width: $tablet) {
-  /*.container {
-    /*padding: 0 0;  }*/
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 22px;
+    max-width: 660px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 960px;
+  }
 }
