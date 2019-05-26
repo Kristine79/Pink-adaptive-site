@@ -1,4 +1,3 @@
-
 @media (min-width: $mobile) {
   .prices-empty {
     background-color: #f2f2f2;
@@ -11,7 +10,7 @@
     background-color: #f2f2f2;
     background-image: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 144% auto;
     background-position: 50% 0;
     overflow: hidden;
   }
@@ -42,14 +41,9 @@
     font-size: 14px;
     line-height: 30px;
     background-color: #ffffff;
-
     padding: 13px 24px 16px;
     width: 197px;
   }
-
-  /*.prices__content-wrapper {
-    display: none;
-  }*/
 
   .prices__content-hidden {
     display: none;
@@ -69,25 +63,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 9px;
-    padding-right: 3px;
+    padding-left: 11px;
+    padding-right: 17px;
   }
 
   .prices__tariff {
-    padding-top: 7px;
-    padding-right: 53px;
-    padding-bottom: 52px;
-    padding-left: 26px;
+    padding: 12px 77px 17px;
     position: relative;
+    width: 274px;
   }
 
   .prices__table {
-    width: 406%;
-    transform: translateX(-39%);
+    width: 323%;
+    transform: translateX(-44%);
   }
 
   .prices__wrapper {
-    padding-top: 100px;
+    padding-top: 97px;
   }
 
   .prices__tariff--hit {
@@ -98,10 +90,10 @@
   .prices__tariff--hit::before {
     position: absolute;
     content: "хит";
-    height: 10px;
+    height: 17px;
     width: 28px;
-    top: 20px;
-    left: 9px;
+    top: 17px;
+    left: 8px;
     font-size: 14px;
     line-height: 14px;
     font-weight: 600;
@@ -198,7 +190,7 @@
     line-height: 30px;
     background-color: #ffffff;
     display: block;
-    padding: 10px 12px 5px;
+    padding: 6px 13px 7px;
     width: 150px;
   }
 
@@ -208,11 +200,8 @@
   }
 
   .prices__tariff {
-    padding-top: 13px;
-    padding-right: 31px;
-    padding-bottom: 0;
-    padding-left: 45px;
-    position: relative;
+    width: 155px;
+    padding: 10px 20px;
   }
 
   .prices__wrapper {
@@ -261,7 +250,7 @@
   }
 
   .prices__table {
-    width: 300px;
+    width: 620px;
     transform: none;
   }
 
@@ -288,8 +277,6 @@
   .prices-fourth {
     width: 152px;
   }
-
-
 }
 
 @media (min-width: $desktop) {
@@ -400,6 +387,4 @@
     margin: 0 auto;
     fill: #f25b26;
   }
-
-
 }

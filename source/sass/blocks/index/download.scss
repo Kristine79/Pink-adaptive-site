@@ -41,7 +41,6 @@
   .download__image-wrapper {
     display: inline-block;
     padding-top: 177px;
-    /*min-height: 460px;*/
     width: 100%;
   }
 
@@ -79,12 +78,11 @@
     font-weight: 700;
     width: 281px;
   }
-
-
 }
 
 
 /*Сетка tablet*/
+
 @media (min-width: $tablet) {
   .download {
     padding-top: 0;
@@ -99,13 +97,13 @@
 
   .download__section {
     position: absolute;
-    bottom: 79px;
   }
 
   .download__image-wrapper {
     position: absolute;
     bottom: -6px;
-    left: -10px;
+    left: -18px;
+    width: 105%;
   }
 
   .download__background-text {
@@ -118,20 +116,22 @@
     max-width: 200px;
     text-align: center;
     margin-left: 49px;
+    margin-top: 99px;
   }
 
   .download__button {
     display: block;
-    margin: 0 auto 60px;
+    margin: 15px 17px 43px -2px;
     padding-top: 16px;
     padding-bottom: 16px;
-    padding-left: 43px;
+    padding-left: 47px;
     border: 3px solid #ffffff;
     border-radius: 25px;
-    font-size: 21px;
+    font-size: 18px;
     line-height: 18px;
     font-weight: 700;
     color: #ffffff;
+    width: 300px;
   }
 
   .download__text {
@@ -148,24 +148,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 30px;
   }
 
   .download__wrapper {
     background-color: transparent;
     width: 300px;
+    margin-left: -2px;
   }
 
   .download__background {
     min-height: 984px;
     font-size: 24px;
     line-height: 30px;
-  }
-
-  .download__button {
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: bold;
-    width: 300px;
   }
 }
 
@@ -193,6 +188,8 @@
   .download__wrapper {
     background-color: transparent;
     width: 300px;
+    margin-left: 0;
+    margin-top: 0;
   }
 
   .download__background-text {
@@ -210,8 +207,9 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: 300;
-    padding-top: 53px;
+    padding-top: 33px;
     width: 300px;
+    padding-bottom: 56px;
   }
 
   .download__list {
@@ -220,11 +218,12 @@
     justify-content: space-between;
     width: 290px;
     margin-left: 0;
+    margin-bottom: 23px;
   }
 
   .download__button {
-    margin-bottom: 70px;
-    margin-top: 50px;
+    margin-bottom: 65px;
+    margin-top: 52px;
     font-size: 21px;
     line-height: 18px;
     font-weight: bold;
@@ -251,7 +250,7 @@
   }
 
   .download__section {
-    bottom: 92px;
+    bottom: 66px;
     left: 130px;
   }
 }

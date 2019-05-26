@@ -1,4 +1,3 @@
-
 /*Сетка mobile*/
 
 @media (min-width: $mobile) {
@@ -43,12 +42,6 @@
     outline: none;
   }
 
-  /*.main-nav__toggle--close {
-    background-image: url("../img/icon-menu-cross.svg");
-    background-position: 27px 0;
-    background-repeat: no-repeat;
-  }*/
-
   .main-nav__logo {
     fill: #ffffff;
   }
@@ -68,6 +61,7 @@
 }
 
 /*Сетка tablet*/
+
 @media (min-width: $tablet) {
   .main-nav {
     padding-top: 0;
@@ -157,7 +151,7 @@
     text-transform: none;
     font-size: 18px;
     font-weight: 400;
-    border-bottom: 2px solid transparent
+    border-bottom: 2px solid transparent;
   }
 
   .main-nav__link:hover {
@@ -168,12 +162,6 @@
     color: #ffffff;
     opacity: 0.3;
   }
-
-  /*.main-nav__item:active .main-nav__link::after {
-    content: "";
-    display: block;
-    border-bottom: 2px solid #ffffff;
-  }*/
 
   .main-nav__link--active {
     border-bottom: 2px solid #ffffff;
