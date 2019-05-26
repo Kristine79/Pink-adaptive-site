@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк Фото</title>
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" as="font" type="font/woff2" href="fonts/opensans.woff2" crossorigin/>
+  <link rel="preload" as="font" type="font/woff2" href="fonts/opensansbold.woff2" crossorigin/>
+
 </head>
 <body>
 
@@ -13,7 +16,7 @@
   </div>
 
 <header class="header">
-  <a class="header__logo">
+  <a href="/" class="header__logo">
     <svg class="header__logo-mobile" xmlns="http://www.w3.org/2000/svg" width="146.3" height="40.375"><g>
       <path d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"></path>
       <path d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"></path>
@@ -30,7 +33,7 @@
   </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
-        <svg class="main-nav__toggle--close"  width="23.867px" height="23.867px">
+        <svg class="main-nav__toggle-close"  width="23.867px" height="23.867px">
           <use xlink:href="#icon-menu-cross"></use>
         </svg>
       </button>
@@ -334,21 +337,21 @@
           <div class="page-footer__social page-footer__social--photo social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__button" href="#">
+                <a class="social__button" href="#" aria-label="Страница академии в соцсети Twitter">
                   <svg class="social__link social__link--twitter" width="17.5px" height="14.663px">
                     <use xlink:href="#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__button" href="#">
+                <a class="social__button" href="#" aria-label="Страница академии в соцсети Facebook">
                   <svg class="social__link social__link--facebook" width="8.673px" height="18.944px">
                     <use xlink:href="#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__button" href="#">
+                <a class="social__button" href="#" aria-label="Страница академии в Youtube">
                   <svg class="social__link social__link--youtube" width="14.64px" height="13.96px">
                     <use xlink:href="#icon-youtube"></use>
                   </svg>
