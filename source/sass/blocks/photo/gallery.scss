@@ -171,7 +171,7 @@
     display: none;
   }
 
-  .editor_controls-toggle {
+  .editor__controls-toggle {
     position: absolute;
     z-index: 10;
     cursor: pointer;
@@ -184,7 +184,7 @@
     border-radius: 50%;
   }
 
-  .editor__controls-toggle:active {
+  .editor__controls-toggle:focus {
     background-color: #d22856;
   }
 
@@ -522,7 +522,7 @@
     margin-top: 20px;
   }
 
-  .editor_controls-toggle {
+  .editor__controls-toggle {
     position: absolute;
     z-index: 10;
     cursor: pointer;
@@ -535,8 +535,9 @@
     border-radius: 50%;
   }
 
-  .editor__controls-toggle:active {
+  .editor__controls-toggle:focus {
     background-color: #d22856;
+    outline: none;
   }
 
   .editor__controls-toggle--crop {
@@ -891,7 +892,7 @@
     margin-top: 20px;
   }
 
-  .editor_controls-toggle {
+  .editor__controls-toggle {
     position: absolute;
     z-index: 10;
     cursor: pointer;
@@ -904,9 +905,9 @@
     border-radius: 50%;
   }
 
-
-  .editor__controls-toggle:active {
+  .editor__controls-toggle:focus {
     background-color: #d22856;
+    outline: none;
   }
 
   .editor__controls-toggle--crop {

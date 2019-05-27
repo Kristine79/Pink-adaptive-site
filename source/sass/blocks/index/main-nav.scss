@@ -5,17 +5,19 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 32px;
-    padding-top: 8px;
+    width: 100%;
+    margin: 0;
+    padding-top: 7px;
   }
 
   .main-nav__list {
     display: block;
     text-align: center;
-    padding: 0;
     background-color: #283645;
     list-style: none;
     border-bottom: 1px solid #000000;
-    margin-bottom: 0;
+    padding: 0;
+
   }
 
   .main-nav__link {
@@ -66,6 +68,7 @@
 @media (min-width: $tablet) {
   .main-nav {
     padding-top: 0;
+    margin-top: 29px;
   }
 
   .main-nav__list {
@@ -115,23 +118,24 @@
 }
 
 
+
 /*Сетка desktop*/
 
 @media (min-width: $desktop) {
   .main-nav {
-    padding-left: 170px;
-    padding-bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: auto;
   }
 
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    min-width: 800px;
-    justify-content: flex-end;
-    margin-left: auto;
     background-color: transparent;
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   .main-nav__toggle-close {
@@ -145,7 +149,7 @@
   }
 
   .main-nav__item:last-child {
-    margin-right: 8px;
+    padding-right: 0; margin-right: 0;
   }
 
   .main-nav__link {

@@ -1,3 +1,24 @@
+  .contest__radio,
+  .contest__checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+
+  .contest__radio:focus + .contest__label--radio::before {
+    border-color: #283645;
+  }
+
+  .contest__checkbox:focus + .contest__label--checkbox::before {
+    border-color: #283645;
+  }
+
+
 @media (min-width: $mobile) {
   .contest__form {
     display: flex;
@@ -176,10 +197,6 @@
 
   /*Радио кнопки*/
 
-  .contest__radio {
-    display: none;
-  }
-
   .contest__label--radio {
     display: inline-block;
     vertical-align: middle;
@@ -226,17 +243,7 @@
   }
 
 
-  /*Аутлайн для доступности с клавиатуры*/
-
-  .contest__radio:focus + .contest__label--radio::before {
-    outline: #d22856 auto;
-  }
-
   /*Чекбоксы*/
-
-  .contest__checkbox {
-    display: none;
-  }
 
   .contest__label--checkbox {
     display: inline-block;
@@ -270,12 +277,6 @@
     left: 3px;
     height: 16px;
     fill: #d22856;
-  }
-
-  /*Аутлайн для доступности с клавиатуры*/
-
-  .contest__checkbox:focus + .contest__label--checkbox::before {
-    outline: #d22856 auto;
   }
 
   /*Достижения*/
@@ -686,10 +687,6 @@
 
   /*Радио кнопки*/
 
-  .contest__radio {
-    display: none;
-  }
-
   .contest__label--radio {
     display: inline-block;
     vertical-align: middle;
@@ -736,17 +733,7 @@
   }
 
 
-  /*Аутлайн для доступности с клавиатуры*/
-
-  .contest__radio:focus + .contest__label--radio::before {
-    outline: #d22856 auto;
-  }
-
   /*Чекбоксы*/
-
-  .contest__checkbox {
-    display: none;
-  }
 
   .contest__label--checkbox {
     display: inline-block;
@@ -780,12 +767,6 @@
     left: 3px;
     fill: #d22856;
     height: 16px;
-  }
-
-  /*Аутлайн для доступности с клавиатуры*/
-
-  .contest__checkbox:focus + .contest__label--checkbox::before {
-    outline: #d22856 auto;
   }
 
   /*Достижения*/
@@ -1212,10 +1193,6 @@
 
   /*Радио кнопки*/
 
-  .contest__radio {
-    display: none;
-  }
-
   .contest__label--radio {
     display: inline-block;
     vertical-align: middle;
@@ -1262,29 +1239,8 @@
     border-color: #d22856;
   }
 
-  /*Аутлайн для доступности с клавиатуры*/
-
-  .contest__radio:focus + .contest__label--radio::before {
-    outline: #d22856 auto;
-  }
-
-
   /*Чекбоксы*/
 
-  .contest__checkbox {
-    display: none;
-  }
-
-  .contest__label--checkbox::before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    width: 38px;
-    height: 38px;
-    background-color: #ffffff;
-    border: 2px solid #e5e5e5;
-    margin-right: 18px;
-  }
 
   .icon-yes {
     display: none;
@@ -1400,12 +1356,6 @@
   .contest__submit:disabled {
     background-color: #e5e5e5;
     border: #1c9b5e;
-  }
-
-  /*Аутлайн для доступности с клавиатуры*/
-
-  .contest__checkbox:focus + .contest__label--checkbox::before {
-    outline: #d22856 auto;
   }
 
   .contest__list-item--shark {
