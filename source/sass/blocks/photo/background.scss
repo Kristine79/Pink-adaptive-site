@@ -1,5 +1,5 @@
 @media (min-width: $mobile) {
-  .background__wrapper {
+  .background {
     min-height: 460px;
     padding: 0 20px;
     background: url("../img/bg-back-mobile.jpg") 50% 0 no-repeat;
@@ -36,7 +36,7 @@
 }
 
 @media (min-width: $tablet) {
-  .background__wrapper {
+  .background {
     min-height: 550px;
     padding: 0 20px;
     background: url("../img/bg-back-tablet.jpg") 100% 100% no-repeat;
@@ -72,7 +72,7 @@
 }
 
 @media (min-width: $desktop) {
-  .background__wrapper {
+  .background {
     margin: 0;
     background: url("../img/bg-back-desktop.jpg") 100% 100% no-repeat;
     padding: 20px 0 40px;

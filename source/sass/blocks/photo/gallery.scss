@@ -101,16 +101,16 @@
 
   /* ФОРМА */
 
-  .gallery__edit {
+  .editor {
     margin-bottom: 0;
   }
 
-  .gallery__edit__form {
+  .editor__form {
     background-color: #f2f2f2;
     padding-bottom: 41px;
   }
 
-  .gallery__edit__form-wrapper {
+  .editor__form-wrapper {
     background-color: #f2f2f2;
     display: flex;
     justify-content: flex-start;
@@ -118,19 +118,19 @@
     padding-top: 19px;
   }
 
-  .gallery__edit__wrapper {
+  .editor__wrapper {
     margin-bottom: 43px;
     padding-top: 23px;
   }
 
-  .gallery__edit-image {
+  .editor-image {
     width: 300px;
     height: 400px;
     margin-left: 20px;
     margin-right: 30px;
   }
 
-  .gallery__edit-header {
+  .editor__header {
     font-size: 14px;
     line-height: 30px;
     color: #283645;
@@ -138,7 +138,7 @@
     margin: 0;
   }
 
-  .gallery__controls {
+  .editor__controls {
     top: 119px;
     width: 100%;
     height: 36px;
@@ -147,11 +147,11 @@
     border-bottom: 1px solid #dddfe0;
   }
 
-  .gallery__tools-list {
+  .editortools-list {
     position: relative;
   }
 
-  .gallery__controls-scale {
+  .editor__controls-scale {
     position: relative;
     box-sizing: border-box;
     margin: 6px auto 0;
@@ -161,17 +161,17 @@
     padding-left: 0;
   }
 
-  .gallery__controls-bar {
+  .editor__controls-bar {
     height: 2px;
     background-color: #283645;
     margin-top: 99px;
   }
 
-  .gallery__controls--hidden {
+  .editor__controls--hidden {
     display: none;
   }
 
-  .gallery__controls-toggle {
+  .editor_controls-toggle {
     position: absolute;
     z-index: 10;
     cursor: pointer;
@@ -184,36 +184,40 @@
     border-radius: 50%;
   }
 
-  .gallery__controls-toggle--crop {
+  .editor__controls-toggle:active {
+    background-color: #d22856;
+  }
+
+  .editor__controls-toggle--crop {
     left: 192px;
   }
 
-  .gallery__tool {
+  .editor__tool {
     position: absolute;
     fill: #d22856;
   }
 
-  .gallery__tool--crop {
+  .editor__tool--crop {
     top: -84px;
     left: 56px;
   }
 
-  .gallery__tool--size {
+  .editor__tool--size {
     top: -83px;
     left: 137px;
   }
 
-  .gallery__tool--contrast {
+  .editor__tool--contrast {
     top: -77px;
     left: 223px;
   }
 
-  .gallery__tool:hover {
+  .editor__tool:hover {
     fill: #283645;
     opacity: 0.5;
   }
 
-  .gallery-buttons {
+  .editor-buttons {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -221,7 +225,7 @@
     align-items: center;
   }
 
-  .gallery__tool-button {
+  .editor__tool-button {
     display: block;
     box-sizing: border-box;
     width: 280px;
@@ -236,31 +240,31 @@
     letter-spacing: 1px;
   }
 
-  .gallery__tool-button:first-child {
+  .editor__tool-button:first-child {
     margin-bottom: 12px;
   }
 
-  .gallery__tool-button--submit {
+  .editor__tool-button--submit {
     color: #d22856;
     border: 3px solid #d22856;
     border-radius: 30px;
   }
 
-  .gallery__tool-button--submit:hover {
+  .editor__tool-button--submit:hover {
     color: #ffffff;
     border: 3px solid #d22856;
     border-radius: 30px;
     background-color: #d22856;
   }
 
-  .gallery__tool-button--submit:active {
+  .editor__tool-button--submit:active {
     color: rgba(255, 255, 255, 0.3);
     border: 3px solid #d22856;
     border-radius: 30px;
     background-color: #d22856;
   }
 
-  .gallery__tool-button--reset {
+  .editor__tool-button--reset {
     color: #283645;
     opacity: 0.1;
     border: solid 3px #283645;
@@ -268,33 +272,33 @@
     background-color: none;
   }
 
-  .gallery__tool-button--reset:hover {
+  .editor__tool-button--reset:hover {
     color: #283645;
     opacity: 0.3;
     border: 3px solid #283645;
     border-radius: 30px;
   }
 
-  .gallery__tool-button--reset:active {
+  .editor__tool-button--reset:active {
     color: rgba(255, 255, 255, 0.3);
     border: 3px solid #283645;
     border-radius: 30px;
     background-color: #283645;
   }
 
-  .gallery__size {
+  .editor__size {
     height: 44px;
     width: 44px;
   }
 
-  .gallery__fill {
+  .editor__fill {
     height: 48px;
     width: 43px;
     fill: #283645;
     opacity: 0.3;
   }
 
-  .gallery__contrast {
+  .editor__contrast {
     width: 32px;
     height: 32px;
     fill: #283645;
@@ -448,16 +452,16 @@
 
   /* ФОРМА */
 
-  .gallery__edit {
+  .editor {
     margin-bottom: 0;
   }
 
-  .gallery__edit__form {
+  .editor__form {
     background-color: #f2f2f2;
     padding-bottom: 57px;
   }
 
-  .gallery__edit__form-wrapper {
+  .editor__form-wrapper {
     background-color: #f2f2f2;
     display: flex;
     justify-content: flex-start;
@@ -465,19 +469,19 @@
     padding-top: 57px;
   }
 
-  .gallery__edit__wrapper {
+  .editor__wrapper {
     margin-bottom: 70px;
     padding-top: 0;
   }
 
-  .gallery__edit-image {
+  .editor-image {
     width: 300px;
     height: 400px;
     margin-left: 20px;
     margin-right: 48px;
   }
 
-  .gallery__edit-header {
+  .editor__header {
     font-size: 18px;
     line-height: 29px;
     color: #283645;
@@ -485,7 +489,7 @@
     margin: 0;
   }
 
-  .gallery__controls {
+  .editor__controls {
     top: 119px;
     width: 100%;
     height: 36px;
@@ -494,15 +498,15 @@
     border-bottom: 1px solid #dddfe0;
   }
 
-  .gallery__controls--hidden {
+  .editor__controls--hidden {
     display: block;
   }
 
-  .gallery__tools-list {
+  .editortools-list {
     position: relative;
   }
 
-  .gallery__controls-scale {
+  .editor__controls-scale {
     position: relative;
     box-sizing: border-box;
     margin: 6px auto 0;
@@ -512,13 +516,13 @@
     padding-left: 52px;
   }
 
-  .gallery__controls-bar {
+  .editor__controls-bar {
     height: 2px;
     background-color: #283645;
     margin-top: 20px;
   }
 
-  .gallery__controls-toggle {
+  .editor_controls-toggle {
     position: absolute;
     z-index: 10;
     cursor: pointer;
@@ -531,53 +535,57 @@
     border-radius: 50%;
   }
 
-  .gallery__controls-toggle--crop {
+  .editor__controls-toggle:active {
+    background-color: #d22856;
+  }
+
+  .editor__controls-toggle--crop {
     display: block;
     left: 198px;
   }
 
-  .gallery__controls-toggle--size {
+  .editor__controls-toggle--size {
     display: block;
     left: 77px;
   }
 
-  .gallery__controls-toggle--contrast {
+  .editor__controls-toggle--contrast {
     left: 148px;
   }
 
-  .gallery__tool {
+  .editor__tool {
     position: absolute;
     fill: #d22856;
   }
 
-  .gallery__tool--crop {
+  .editor__tool--crop {
     top: -11px;
     left: 0;
   }
 
-  .gallery__tool--size {
+  .editor__tool--size {
     top: 63px;
     left: 1px;
   }
 
-  .gallery__tool--contrast {
+  .editor__tool--contrast {
     top: 134px;
     left: 5px;
   }
 
-  .gallery__tool:hover {
+  .editor__tool:hover {
     fill: #283645;
     opacity: 0.5;
   }
 
-  .gallery-buttons {
+  .editor-buttons {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     margin-top: 69px;
   }
 
-  .gallery__tool-button {
+  .editor__tool-button {
     display: block;
     box-sizing: border-box;
     width: 260px;
@@ -591,31 +599,31 @@
     background-color: #f2f2f2;
   }
 
-  .gallery__tool-button:first-child {
+  .editor__tool-button:first-child {
     margin-bottom: 24px;
   }
 
-  .gallery__tool-button--submit {
+  .editor__tool-button--submit {
     color: #d22856;
     border: 3px solid #d22856;
     border-radius: 30px;
   }
 
-  .gallery__tool-button--submit:hover {
+  .editor__tool-button--submit:hover {
     color: #ffffff;
     border: 3px solid #d22856;
     border-radius: 30px;
     background-color: #d22856;
   }
 
-  .gallery__tool-button--submit:active {
+  .editor__tool-button--submit:active {
     color: rgba(255, 255, 255, 0.3);
     border: 3px solid #d22856;
     border-radius: 30px;
     background-color: #d22856;
   }
 
-  .gallery__tool-button--reset {
+  .editor__tool-button--reset {
     color: #283645;
     opacity: 0.1;
     border: solid 3px #283645;
@@ -623,40 +631,40 @@
     background-color: none;
   }
 
-  .gallery__tool-button--reset:hover {
+  .editor__tool-button--reset:hover {
     color: #283645;
     opacity: 0.3;
     border: 3px solid #283645;
     border-radius: 30px;
   }
 
-  .gallery__tool-button--reset:active {
+  .editor__tool-button--reset:active {
     color: rgba(255, 255, 255, 0.3);
     border: 3px solid #283645;
     border-radius: 30px;
     background-color: #283645;
   }
 
-  .gallery__size {
+  .editor__size {
     height: 22px;
     width: 22px;
   }
 
-  .gallery__fill {
+  .editor__fill {
     height: 24px;
     width: 22px;
     fill: #d22856;
     opacity: 1;
   }
 
-  .gallery__contrast {
+  .editor__contrast {
     height: 16px;
     width: 16px;
     fill: #d22856;
     opacity: 1;
   }
 
-  .gallery__edit .container {
+  .editor .container {
     padding: 0;
   }
 }
@@ -811,18 +819,18 @@
 
   /* ФОРМА */
 
-  .gallery__edit {
+  .editor {
     margin-bottom: 66px;
   }
 
-  .gallery__edit__form {
+  .editor__form {
     background-color: #f2f2f2;
     padding-bottom: 57px;
     width: 940px;
     margin: 0 auto;
   }
 
-  .gallery__edit__form-wrapper {
+  .editor__form-wrapper {
     background-color: #f2f2f2;
     display: flex;
     justify-content: flex-start;
@@ -830,19 +838,19 @@
     padding-top: 57px;
   }
 
-  .gallery__edit__wrapper {
+  .editor__wrapper {
     margin-bottom: 66px;
     padding-top: 0;
   }
 
-  .gallery__edit-image {
+  .editor-image {
     width: 300px;
     height: 400px;
     margin-left: 79px;
     margin-right: 93px;
   }
 
-  .gallery__edit-header {
+  .editor__header {
     font-size: 18px;
     line-height: 30px;
     color: #283645;
@@ -850,7 +858,7 @@
     margin: 0;
   }
 
-  .gallery__controls {
+  .editor__controls {
     top: 119px;
     width: 100%;
     height: 36px;
@@ -859,15 +867,15 @@
     border-bottom: 1px solid #dddfe0;
   }
 
-  .gallery__controls--hidden {
+  .editor__controls--hidden {
     display: block;
   }
 
-  .gallery__tools-list {
+  .editortools-list {
     position: relative;
   }
 
-  .gallery__controls-scale {
+  .editor__controls-scale {
     position: relative;
     box-sizing: border-box;
     margin: 6px auto 0;
@@ -877,13 +885,13 @@
     padding-left: 92px;
   }
 
-  .gallery__controls-bar {
+  .editor__controls-bar {
     height: 2px;
     background-color: #283645;
     margin-top: 20px;
   }
 
-  .gallery__controls-toggle {
+  .editor_controls-toggle {
     position: absolute;
     z-index: 10;
     cursor: pointer;
@@ -892,55 +900,65 @@
     top: -6px;
     left: 14px;
     background-color: #f2f2f2;
-    border: 2px solid #cd2856;
+    border: 2px solid #d22856;
     border-radius: 50%;
   }
 
-  .gallery__controls-toggle--crop {
+
+  .editor__controls-toggle:active {
+    background-color: #d22856;
+  }
+
+  .editor__controls-toggle--crop {
     left: 161px;
   }
 
-  .gallery__controls-toggle--size {
+  .editor__controls-toggle--size {
     left: 337px;
   }
 
-  .gallery__controls-toggle--contrast {
+  .editor__controls-toggle--contrast {
     left: 250px;
   }
 
-  .gallery__tool {
+  .editor__tool {
     position: absolute;
     fill: #d22856;
   }
 
-  .gallery__tool--crop {
+  .editor__tool--crop {
     top: -21px;
     left: -2px;
   }
 
-  .gallery__tool--size {
+  .editor__tool--size {
     top: 52px;
     left: 0;
   }
 
-  .gallery__tool--contrast {
+  .editor__tool--contrast {
     top: 128px;
     left: 4px;
   }
 
-  .gallery__tool:hover {
+  .editor__tool:hover {
     fill: #283645;
     opacity: 0.5;
   }
 
-  .gallery-buttons {
+  .editor__tool:active {
+    fill: #283645;
+    opacity: 0.5;
+  }
+
+  .editor-buttons {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     margin-top: 147px;
   }
 
-  .gallery__tool-button {
+  .editor__tool-button {
     display: block;
     box-sizing: border-box;
     width: 183px;
@@ -954,31 +972,31 @@
     background-color: #f2f2f2;
   }
 
-  .gallery__tool-button:first-child {
+  .editor__tool-button:first-child {
     margin-bottom: 0;
   }
 
-  .gallery__tool-button--submit {
+  .editor__tool-button--submit {
     color: #d22856;
     border: 3px solid #d22856;
     border-radius: 30px;
   }
 
-  .gallery__tool-button--submit:hover {
+  .editor__tool-button--submit:hover {
     color: #ffffff;
     border: 3px solid #d22856;
     border-radius: 30px;
     background-color: #d22856;
   }
 
-  .gallery__tool-button--submit:active {
+  .editor__tool-button--submit:active {
     color: rgba(255, 255, 255, 0.3);
     border: 3px solid #d22856;
     border-radius: 30px;
     background-color: #d22856;
   }
 
-  .gallery__tool-button--reset {
+  .editor__tool-button--reset {
     color: #283645;
     opacity: 0.1;
     border: solid 3px #283645;
@@ -986,31 +1004,31 @@
     background-color: none;
   }
 
-  .gallery__tool-button--reset:hover {
+  .editor__tool-button--reset:hover {
     color: #283645;
     opacity: 0.3;
     border: 3px solid #283645;
     border-radius: 30px;
   }
 
-  .gallery__tool-button--reset:active {
+  .editor__tool-button--reset:active {
     color: rgba(255, 255, 255, 0.3);
     border: 3px solid #283645;
     border-radius: 30px;
     background-color: #283645;
   }
 
-  .gallery__size {
+  .editor__size {
     height: 44px;
     width: 44px;
   }
 
-  .gallery__fill {
+  .editor__fill {
     height: 48px;
     width: 43px;
   }
 
-  .gallery__contrast {
+  .editor__contrast {
     height: 32px;
     width: 32px;
   }

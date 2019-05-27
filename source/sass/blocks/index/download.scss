@@ -23,15 +23,16 @@
     align-items: baseline;
     margin-left: 18px;
     margin-bottom: 0;
+    overflow: hidden;
   }
 
   .download {
     min-height: 460px;
     background: url("../img/bg-back-mobile.jpg") 50% 0 no-repeat;
-    background-size: contain, cover;
     margin-top: 261px;
     position: relative;
     background-color: #17212d;
+    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -78,6 +79,17 @@
     font-weight: 700;
     width: 281px;
   }
+
+  .download__background {
+    min-height: 400px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .download__background .container {
+    min-height: 400px;
+    position: relative;
+  }
 }
 
 
@@ -89,6 +101,9 @@
     margin-top: 0;
     background: url("../img/bg-back-tablet.jpg") 100% 100% no-repeat;
     position: relative;
+    background-color: #17212d;
+    overflow: hidden;
+    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -96,7 +111,7 @@
   }
 
   .download__section {
-    position: absolute;
+    position: relative;
   }
 
   .download__image-wrapper {
@@ -164,6 +179,11 @@
     font-size: 24px;
     line-height: 30px;
   }
+
+  .download__background .container {
+    min-height: 984px;
+    position: relative;
+  }
 }
 
 /*Сетка desktop*/
@@ -174,6 +194,9 @@
     margin-top: 0;
     background: url("../img/bg-back-desktop.jpg") 100% 100% no-repeat;
     position: relative;
+    background-color: #17212d;
+    overflow: hidden;
+    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -183,8 +206,9 @@
   .download__image-wrapper {
     position: absolute;
     bottom: 0;
-    left: 145px;
+    left: 28px;
     padding-top: 0;
+    width: 109%;
   }
 
   .download__wrapper {
@@ -238,8 +262,16 @@
 
   .download__background {
     min-height: 853px;
-    padding: 0 270px;
     font-size: 50px;
+  }
+
+  .download__background .container {
+    min-height: 853px;
+    position: relative;
+  }
+
+  .download__section {
+    position: relative;
   }
 
   .download__button:hover {
@@ -250,10 +282,5 @@
   .download__button:active {
     background-color: #ffffff;
     color: rgba(210, 40, 86, 0.3);
-  }
-
-  .download__section {
-    bottom: 66px;
-    left: 130px;
   }
 }

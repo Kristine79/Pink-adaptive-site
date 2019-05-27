@@ -1,4 +1,4 @@
-.social__button {
+.footer__social-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,11 +11,11 @@
   background-position: 50% 50%;
 }
 
-.social__link {
+.footer__social-link {
   fill: #d22856;
 }
 
-.social__list {
+.footer__social-list {
   list-style: none;
 }
 
@@ -23,11 +23,11 @@
 /*Для телефона*/
 
 @media (min-width: $mobile) {
-  .page-footer__hidden {
+  .footer__hidden {
     display: none;
   }
 
-  .page-footer--photo {
+  .footer--photo {
     display: block;
   }
 
@@ -40,15 +40,15 @@
     margin-top: 40px;
   }
 
-  .social__list {
+  .footer__social-list {
     display: flex;
   }
 
-  .page-footer {
+  .footer {
     text-align: center;
   }
 
-  .page-footer--form {
+  .footer--form {
     display: block;
     margin-top: 40px;
   }
@@ -59,20 +59,21 @@
     align-items: center;
   }
 
-  .page-footer__copyright {
+  .footer__copyright {
     display: flex;
     margin-bottom: 50px;
   }
 
-  .copyright__text {
+  .footer__copyright-text {
     font-size: 14px;
     line-height: 18px;
     font-weight: normal;
     margin-top: 8px;
     margin-right: 14px;
+    color: #283645;
   }
 
-  .copyright__image {
+  .footer__copyright-image {
     fill: #d22856;
   }
 
@@ -80,7 +81,7 @@
     margin-bottom: 24px;
   }
 
-  .page-footer__social {
+  .footer__social {
     margin-right: 28px;
     margin-bottom: 25px;
   }
@@ -98,7 +99,7 @@
 /*Сетка для планшета*/
 
 @media (min-width: $tablet) {
-  .page-footer__hidden {
+  .footer__hidden {
     display: block;
     margin-top: 0;
   }
@@ -116,39 +117,39 @@
     margin-top: 0;
   }
 
-  .social__list {
+  .footer__social-list {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .page-footer__copyright {
+  .footer__copyright {
     display: flex;
     align-items: center;
     margin-bottom: 26px;
   }
 
-  .copyright__link {
+  .footer__copyright-link {
     margin-top: 15px;
   }
 
-  .page-footer__social {
+  .footer__social {
     margin-right: 48px;
   }
 
-  .copyright__image {
+  .footer__copyright-image {
     fill: #d22856;
   }
 
-  .copyright__image:hover {
+  .footer__copyright-image:hover {
     color: #283645;
   }
 
-  .copyright__image:active {
+  .footer__copyright-image:active {
     color: #283645;
     opacity: 0.3;
   }
 
-  .copyright__text {
+  .footer__copyright-text {
     font-size: 14px;
     line-height: 18px;
     margin-right: 14px;
@@ -171,7 +172,7 @@
 /*Сетка desktop*/
 
 @media (min-width: $desktop) {
-  .page-footer__hidden {
+  .footer__hidden {
     display: block;
     margin-top: 17px;
   }
@@ -189,56 +190,56 @@
     width: 940px;
   }
 
-  .social__list {
+  .footer__social-list {
     display: flex;
     flex-wrap: wrap;
     padding-left: 41px;
   }
 
-  .page-footer__copyright {
+  .footer__copyright {
     display: flex;
     align-items: center;
     margin-bottom: 0;
   }
 
-  .page-footer__social {
+  .footer__social {
     margin-right: 22px;
     margin-top: 12px;
   }
 
-  .copyright__text {
+  .footer__copyright-text {
     font-size: 18px;
     line-height: 18px;
     margin-top: -13px;
   }
 
-  .copyright__link {
+  .footer__copyright-link {
     padding-top: 0;
     margin-top: 0;
   }
 
-  .social__button:hover {
+  .footer__social-button:hover {
     border: solid 3px #283645;
   }
 
-  .social__button:active {
+  .footer__social-button:active {
     border: solid 3px #283645;
     opacity: 0.1;
   }
 
-  .social__link:active {
+  .footer__social-link:active {
     opacity: 0.3;
   }
 
-  .copyright__image {
+  .footer__copyright-image {
     fill: #d22856;
   }
 
-  .copyright__image:hover {
+  .footer__copyright-image:hover {
     fill: #283645;
   }
 
-  .copyright__image:active {
+  .footer__copyright-image:active {
     fill: #283645;
     opacity: 0.3;
   }
@@ -252,12 +253,12 @@
     display: block;
   }
 
-  .page-footer__social--photo {
+  .footer__social--photo {
     margin-right: 12px;
   }
 
 
-  .page-footer__social--form {
+  .footer__social--form {
     margin-right: 13px;
   }
 }

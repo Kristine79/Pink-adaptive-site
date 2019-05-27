@@ -133,7 +133,7 @@
     margin-top: 20px;
   }
 
-  .contest__field--contacts .contest__list-item .contest__label {
+  .contest__field--contacts .contest__label {
     order: 1;
     padding-left: 20px;
   }
@@ -177,7 +177,7 @@
   /*Радио кнопки*/
 
   .contest__radio {
-    appearance: none;
+    display: none;
   }
 
   .contest__label--radio {
@@ -225,10 +225,17 @@
     border-color: #d22856;
   }
 
+
+  /*Аутлайн для доступности с клавиатуры*/
+
+  .contest__radio:focus + .contest__label--radio::before {
+    outline: #d22856 auto;
+  }
+
   /*Чекбоксы*/
 
   .contest__checkbox {
-    appearance: none;
+    display: none;
   }
 
   .contest__label--checkbox {
@@ -263,6 +270,12 @@
     left: 3px;
     height: 16px;
     fill: #d22856;
+  }
+
+  /*Аутлайн для доступности с клавиатуры*/
+
+  .contest__checkbox:focus + .contest__label--checkbox::before {
+    outline: #d22856 auto;
   }
 
   /*Достижения*/
@@ -599,7 +612,7 @@
     margin-top: 17px;
   }
 
-  .contest__field--contacts .contest__list-item .contest__label {
+  .contest__field--contacts .contest__label {
     order: 1;
     padding-left: 21px;
     margin-top: -4px;
@@ -674,7 +687,7 @@
   /*Радио кнопки*/
 
   .contest__radio {
-    appearance: none;
+    display: none;
   }
 
   .contest__label--radio {
@@ -722,10 +735,17 @@
     border-color: #d22856;
   }
 
+
+  /*Аутлайн для доступности с клавиатуры*/
+
+  .contest__radio:focus + .contest__label--radio::before {
+    outline: #d22856 auto;
+  }
+
   /*Чекбоксы*/
 
   .contest__checkbox {
-    appearance: none;
+    display: none;
   }
 
   .contest__label--checkbox {
@@ -760,6 +780,12 @@
     left: 3px;
     fill: #d22856;
     height: 16px;
+  }
+
+  /*Аутлайн для доступности с клавиатуры*/
+
+  .contest__checkbox:focus + .contest__label--checkbox::before {
+    outline: #d22856 auto;
   }
 
   /*Достижения*/
@@ -1131,7 +1157,7 @@
     margin-top: -35px;
   }
 
-  .contest__field--contacts .contest__list-item .contest__label {
+  .contest__field--contacts .contest__label {
     order: 1;
 
     padding: 9px 0 0 19px;
@@ -1235,6 +1261,13 @@
   .contest__label--radio:active::before {
     border-color: #d22856;
   }
+
+  /*Аутлайн для доступности с клавиатуры*/
+
+  .contest__radio:focus + .contest__label--radio::before {
+    outline: #d22856 auto;
+  }
+
 
   /*Чекбоксы*/
 
@@ -1367,6 +1400,12 @@
   .contest__submit:disabled {
     background-color: #e5e5e5;
     border: #1c9b5e;
+  }
+
+  /*Аутлайн для доступности с клавиатуры*/
+
+  .contest__checkbox:focus + .contest__label--checkbox::before {
+    outline: #d22856 auto;
   }
 
   .contest__list-item--shark {
