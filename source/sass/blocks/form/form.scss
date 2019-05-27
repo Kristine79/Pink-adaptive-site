@@ -602,11 +602,12 @@
   .contest__field--contacts .contest__list-item .contest__label {
     order: 1;
     padding-left: 21px;
+    margin-top: -4px;
   }
 
   .contest__field--contacts .contest__list-item {
     margin-top: 11px;
-    margin-bottom: 3px;
+    margin-bottom: 6px;
     flex-direction: column;
     display: flex;
     margin-right: 46px;
@@ -745,7 +746,7 @@
     height: 36px;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
-    margin-right: 15px;
+    margin-right: 17px;
   }
 
   .icon-yes {
@@ -767,7 +768,7 @@
     background: none;
     width: 100%;
     margin-bottom: 51px;
-    margin-top: 49px;
+    margin-top: 51px;
   }
 
   .contest__field--achievements .contest__list {

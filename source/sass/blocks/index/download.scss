@@ -147,8 +147,10 @@
   .download__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 30px;
+    margin-left: 0;
+    padding-left: 32px;
   }
 
   .download__wrapper {
@@ -219,6 +221,7 @@
     width: 290px;
     margin-left: 0;
     margin-bottom: 23px;
+    padding-left: 46px;
   }
 
   .download__button {
