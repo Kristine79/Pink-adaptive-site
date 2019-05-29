@@ -1,5 +1,5 @@
 @media (min-width: $mobile) {
-  .prices-empty {
+  .prices__empty {
     background-color: #f2f2f2;
     border: none;
   }
@@ -194,7 +194,7 @@
     width: 150px;
   }
 
-  .prices-empty {
+  .prices__empty {
     background-color: #f2f2f2;
     border: none;
   }
@@ -286,7 +286,7 @@
     border-collapse: collapse;
   }
 
-  .prices-border {
+  .prices__border {
     border: solid 1px #e5e5e5;
   }
 
@@ -334,7 +334,7 @@
     display: none;
   }
 
-  .prices-empty {
+  .prices__empty {
     background-color: #f2f2f2;
     border: none;
   }

@@ -55,7 +55,7 @@
   </div>
   </header>
 
-  <main class="container-photo">
+  <main>
     <section class="background">
       <h1 class="background__header">Фотографии пользователей</h1>
     </section>
@@ -266,14 +266,14 @@
 
         <form class="editor__form" action="echo" method="post">
           <div class="editor__form-wrapper">
-            <picture class="editor-image">
+            <picture class="editor__image">
               <source media="(min-width: 960px)" srcset="img/photoroad.jpg, img/photo-road-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
-              <img class="editor-photo" src="img/photo-road-mobile.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фото дороги">
+              <img class="editor__photo" src="img/photo-road-mobile.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фото дороги">
             </picture>
 
-            <div class="editortools">
-              <div class="editortools-list">
+            <div>
+              <div class="editortools__list">
                 <div class="editor__tool editor__tool--crop">
                   <svg class="editor__size">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-crop"></use>
@@ -311,7 +311,7 @@
                 </div>
               </div>
 
-            <div class="editor-buttons">
+            <div class="editor__buttons">
               <input class="editor__tool-button editor__tool-button--submit" type="submit" value="Запостить">
               <input class="editor__tool-button editor__tool-button--reset" type="reset" value="Отмена">
             </div>
@@ -321,7 +321,7 @@
       </div>
     </section>
 
-    <footer class="footer__hidden footer--photo">
+    <footer class="footer footer--photo">
       <div class="container">
         <div class="footer-wrapper footer-wrapper--photo">
           <a href="/" class="footer__logo">

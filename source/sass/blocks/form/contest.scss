@@ -49,6 +49,7 @@
 
   .contest__field {
     border: none;
+    margin: 0;
   }
 
   .contest__field--info {
@@ -265,11 +266,11 @@
     margin-left: 11px;
   }
 
-  .icon-yes {
+  .contest__icon-yes {
     display: none;
   }
 
-  .contest__checkbox:checked + .contest__label--checkbox .icon-yes {
+  .contest__checkbox:checked + .contest__label--checkbox .contest__icon-yes {
     position: absolute;
     display: block;
     top: 9px;
@@ -357,7 +358,7 @@
     margin-bottom: 13px;
   }
 
-  .contest_asterisk {
+  .contest__asterisk {
     color: #d22856;
   }
 
@@ -756,11 +757,11 @@
     margin-left: 10px;
   }
 
-  .icon-yes {
+  .contest__icon-yes {
     display: none;
   }
 
-  .contest__checkbox:checked + .contest__label--checkbox .icon-yes {
+  .contest__checkbox:checked + .contest__label--checkbox .contest__icon-yes {
     position: absolute;
     display: block;
     top: 9px;
@@ -848,7 +849,7 @@
     margin-bottom: -4px;
   }
 
-  .contest_asterisk {
+  .contest__asterisk {
     color: #d22856;
   }
 
@@ -1255,11 +1256,11 @@
   }
 
 
-  .icon-yes {
+  .contest__icon-yes {
     display: none;
   }
 
-  .contest__checkbox:checked + .contest__label--checkbox .icon-yes {
+  .contest__checkbox:checked + .contest__label--checkbox .contest__icon-yes {
     position: absolute;
     display: block;
     top: 9px;
@@ -1345,7 +1346,7 @@
     flex-direction: row;
   }
 
-  .contest_asterisk {
+  .contest__asterisk {
     color: #d22856;
   }
 

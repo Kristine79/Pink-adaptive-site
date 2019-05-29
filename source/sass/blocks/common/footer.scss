@@ -23,7 +23,7 @@
 /*Для телефона*/
 
 @media (min-width: $mobile) {
-  .footer__hidden {
+  .footer {
     display: none;
   }
 
@@ -42,10 +42,6 @@
 
   .footer__social-list {
     display: flex;
-  }
-
-  .footer {
-    text-align: center;
   }
 
   .footer--form {
@@ -99,7 +95,7 @@
 /*Сетка для планшета*/
 
 @media (min-width: $tablet) {
-  .footer__hidden {
+  .footer {
     display: block;
     margin-top: 0;
   }
@@ -172,7 +168,7 @@
 /*Сетка desktop*/
 
 @media (min-width: $desktop) {
-  .footer__hidden {
+  .footer {
     display: block;
     margin-top: 17px;
   }

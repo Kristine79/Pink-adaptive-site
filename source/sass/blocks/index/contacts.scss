@@ -37,6 +37,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0;
   }
 
   .contacts__section {
@@ -160,7 +161,7 @@
     display: flex;
     justify-content: space-around;
     padding: 1px 14px 0;
-    margin: 0 -20px;
+    margin: 0 -10px;
   }
 
   .contacts {
