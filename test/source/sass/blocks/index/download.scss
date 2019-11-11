@@ -1,0 +1,286 @@
+.download__background {
+  font-size: 24px;
+  font-weight: 300px;
+}
+
+.download__text {
+  font-size: 18px;
+  font-weight: 300px;
+  color: #ffffff;
+}
+
+.download__item {
+  display: block;
+  width: 80px;
+}
+
+
+/*Сетка mobile*/
+@media (min-width: $mobile) {
+  .download__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-left: 18px;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+
+  .download {
+    min-height: 460px;
+    background: url("../img/bg-back-mobile.jpg") 50% 0 no-repeat;
+    margin-top: 261px;
+    position: relative;
+    background-color: #17212d;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+    }
+  }
+
+  .download__image-wrapper {
+    display: inline-block;
+    padding-top: 174px;
+    width: 100%;
+  }
+
+  .download__wrapper {
+    margin-top: -6px;
+    background-color: #17212d;
+  }
+
+  .download__background-text {
+    display: none;
+  }
+
+  .download__text {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto;
+    width: 230px;
+    padding-bottom: 29px;
+    padding-top: 18px;
+  }
+
+  .download__button {
+    display: block;
+    margin: 27px auto 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 37px;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #ffffff;
+    font-weight: 700;
+    width: 281px;
+  }
+
+  .download__background {
+    min-height: 400px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .download__background .container {
+    min-height: 400px;
+    position: relative;
+  }
+}
+
+
+/*Сетка tablet*/
+
+@media (min-width: $tablet) {
+  .download {
+    padding-top: 0;
+    margin-top: 0;
+    background: url("../img/bg-back-tablet.jpg") 100% 100% no-repeat;
+    position: relative;
+    background-color: #17212d;
+    overflow: hidden;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  .download__section {
+    position: relative;
+  }
+
+  .download__image-wrapper {
+    position: absolute;
+    bottom: -6px;
+    left: -18px;
+    width: 105%;
+  }
+
+  .download__background-text {
+    display: block;
+    color: #ffffff;
+    padding-top: 338px;
+    font-size: 40px;
+    line-height: 47px;
+    font-weight: 300;
+    max-width: 200px;
+    text-align: center;
+    margin-left: 49px;
+    margin-top: 99px;
+  }
+
+  .download__button {
+    display: block;
+    margin: 15px 17px 43px -2px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 47px;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    width: 300px;
+  }
+
+  .download__text {
+    font-weight: 300;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    width: 300px;
+    padding-bottom: 31px;
+    padding-top: 0;
+  }
+
+  .download__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-left: 0;
+    padding-left: 32px;
+  }
+
+  .download__wrapper {
+    background-color: transparent;
+    width: 300px;
+    margin-left: -2px;
+  }
+
+  .download__background {
+    min-height: 984px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .download__background .container {
+    min-height: 984px;
+    position: relative;
+  }
+}
+
+/*Сетка desktop*/
+
+@media (min-width: $desktop) {
+  .download {
+    padding-top: 0;
+    margin-top: 0;
+    background: url("../img/bg-back-desktop.jpg") 100% 100% no-repeat;
+    position: relative;
+    background-color: #17212d;
+    overflow: hidden;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+
+  .download__image-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 28px;
+    padding-top: 0;
+    width: 109%;
+  }
+
+  .download__wrapper {
+    background-color: transparent;
+    width: 300px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .download__background-text {
+    display: block;
+    color: #ffffff;
+    padding: 208px 0 0;
+    font-size: 50px;
+    line-height: 60px;
+    max-width: 300px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .download__text {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    padding-top: 33px;
+    width: 300px;
+    padding-bottom: 56px;
+  }
+
+  .download__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 290px;
+    margin-left: 0;
+    margin-bottom: 23px;
+    padding-left: 46px;
+  }
+
+  .download__button {
+    margin-bottom: 65px;
+    margin-top: 52px;
+    font-size: 21px;
+    line-height: 18px;
+    font-weight: bold;
+    margin-right: 0;
+    padding-left: 29px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .download__background {
+    min-height: 853px;
+    font-size: 50px;
+  }
+
+  .download__background .container {
+    min-height: 853px;
+    position: relative;
+  }
+
+  .download__section {
+    position: relative;
+  }
+
+  .download__button:hover {
+    background-color: #ffffff;
+    color: #d22856;
+  }
+
+  .download__button:active {
+    background-color: #ffffff;
+    color: rgba(210, 40, 86, 0.3);
+  }
+}

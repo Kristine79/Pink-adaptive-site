@@ -1,0 +1,120 @@
+/*Стили для body, ссылок и изображений
+Правило font-face для шрифтов
+Переменные
+Миксины
+/*Шрифты*/
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff") format("woff");
+  src: url("../fonts/opensansbold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensanslight.woff") format("woff");
+  src: url("../fonts/opensanslight.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+$font: "Open Sans", "Arial", sans-serif;
+
+body {
+  font-family: $font;
+  font-weight: 400px;
+  font-size: 14px;
+  color: #283645;
+  font-style: normal;
+  line-height: 24px;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Цвет текста в полях ввода форм*/
+
+::placeholder {
+  color: #283645;
+}
+
+/*Отступы*/
+$mobile-pads: 20px;
+
+/*Ширина вьюпортов*/
+$mobile: 320px;
+$tablet: 660px;
+$desktop: 960px;
+
+/*Ретина*/
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+@media (min-width: $mobile) {
+  .container {
+    padding: 0;
+  }
+}
+
+@media (min-width: $tablet) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 22px;
+    max-width: 660px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 960px;
+  }
+}
